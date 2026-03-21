@@ -1,0 +1,110 @@
+[
+  {
+    "id": "honest-diapers",
+    "title": "Honest Company Diapers",
+    "category": "items",
+    "subcategory": "diapers",
+    "tags": ["newborn", "essentials", "day-one"],
+    "description": "Plant-based, hypoallergenic diapers that are gentle on sensitive newborn skin. No chlorine processing, no latex. A top pick for parents who want clean ingredients without sacrificing absorbency.",
+    "link": "https://www.honest.com/baby/diapers",
+    "imageUrl": "",
+    "audience": ["both"],
+    "stage": ["newborn", "first-year"]
+  },
+  {
+    "id": "hatch-rest-sound-machine",
+    "title": "Hatch Rest Sound Machine",
+    "category": "items",
+    "subcategory": "sleep",
+    "tags": ["sleep", "essentials", "newborn"],
+    "description": "A nightlight, sound machine, and ok-to-wake clock in one. App-controlled so you never have to sneak into the room to adjust it. Grows with your child from newborn through toddler years.",
+    "link": "https://www.hatch.co/rest",
+    "imageUrl": "",
+    "audience": ["both"],
+    "stage": ["newborn", "first-year"]
+  },
+  {
+    "id": "uppababy-mesa-car-seat",
+    "title": "UPPAbaby Mesa Car Seat",
+    "category": "items",
+    "subcategory": "car-seats",
+    "tags": ["essentials", "safety", "hospital-bag"],
+    "description": "One of the easiest infant car seats to install correctly — confirmed by NHTSA testing. The no-rethread harness and load leg make it a favorite for parents who want safety and convenience. Required before leaving the hospital.",
+    "link": "https://www.uppababy.com/mesa",
+    "imageUrl": "",
+    "audience": ["both"],
+    "stage": ["pregnancy", "newborn"]
+  },
+  {
+    "id": "prenatal-vitamins-ritual",
+    "title": "Ritual Essential Prenatal",
+    "category": "health",
+    "subcategory": "supplements",
+    "tags": ["pregnancy", "supplements", "essentials"],
+    "description": "A traceable, delayed-release prenatal vitamin with the nutrients that matter most: methylated folate, omega-3 DHA, iron, and D3. No unnecessary fillers. The mint-essenced capsule makes it easier on a queasy stomach.",
+    "link": "https://ritual.com/products/essential-prenatal",
+    "imageUrl": "",
+    "audience": ["mom"],
+    "stage": ["pregnancy"]
+  },
+  {
+    "id": "pelvic-floor-exercises",
+    "title": "Pelvic Floor Exercises for Pregnancy",
+    "category": "health",
+    "subcategory": "exercise",
+    "tags": ["pregnancy", "exercise", "recovery"],
+    "description": "Kegel exercises and pelvic floor strengthening are among the most recommended practices by OBs and midwives. This guide covers what to do, how often, and why it matters for both birth and postpartum recovery.",
+    "link": "https://www.acog.org/womens-health/faqs/exercise-during-pregnancy",
+    "imageUrl": "",
+    "audience": ["mom"],
+    "stage": ["pregnancy", "birth"]
+  },
+  {
+    "id": "postpartum-depression-resources",
+    "title": "Understanding Postpartum Depression",
+    "category": "health",
+    "subcategory": "mental-health",
+    "tags": ["postpartum", "mental-health", "mom", "partner"],
+    "description": "PPD affects 1 in 7 new mothers — and partners can experience it too. This resource covers symptoms, what's normal vs. what needs attention, and how to get help. Knowing the signs before birth makes a real difference.",
+    "link": "https://www.postpartum.net",
+    "imageUrl": "",
+    "audience": ["both"],
+    "stage": ["birth", "newborn", "first-year"]
+  },
+  {
+    "id": "birth-plan-template",
+    "title": "Birth Plan Template",
+    "category": "resources",
+    "subcategory": "birth-plan",
+    "tags": ["birth", "planning", "essentials"],
+    "description": "A one-page birth plan template that covers pain management preferences, labor positions, immediate newborn care, and your support person's role. Clear and concise enough that your care team will actually read it.",
+    "link": "https://www.acog.org/womens-health/faqs/birth-plans",
+    "imageUrl": "",
+    "audience": ["both"],
+    "stage": ["pregnancy", "birth"]
+  },
+  {
+    "id": "partner-guide-labor",
+    "title": "The Partner's Guide to Labor & Delivery",
+    "category": "resources",
+    "subcategory": "partners",
+    "tags": ["birth", "partner", "labor"],
+    "description": "A practical, no-fluff guide for partners covering what to expect in the delivery room, how to advocate for your partner, when to call the doctor, and what to pack in your own hospital bag bag. You have a job too.",
+    "link": "https://www.marchofdimes.org/find-support/topics/birth/dad-and-co-parents-guide-labor-and-delivery",
+    "imageUrl": "",
+    "audience": ["partner"],
+    "stage": ["pregnancy", "birth"]
+  },
+  {
+    "id": "finding-pediatrician",
+    "title": "How to Find & Choose a Pediatrician",
+    "category": "resources",
+    "subcategory": "checklists",
+    "tags": ["planning", "newborn", "essentials"],
+    "description": "You need to have a pediatrician chosen before your baby is born — most see newborns within 2–3 days of discharge. This checklist walks you through what to look for, questions to ask at your meet-and-greet, and insurance considerations.",
+    "link": "https://www.healthychildren.org/english/tips-tools/find-pediatrician/pages/default.aspx",
+    "imageUrl": "",
+    "audience": ["both"],
+    "stage": ["pregnancy"]
+  }
+]
