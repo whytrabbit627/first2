@@ -112,10 +112,13 @@ Users referenced:
 
 **As a partner, I want to filter content specifically for dads/partners, so that I can find resources relevant to my role.**
 
-- [ ] Audience filter options: All, For Mom, For Partners, For Both
-- [ ] Filter available on category and search results pages
-- [ ] Filters on `audience` field in content.json
-- [ ] Default is "All"
+- [ ] Audience filter bar displayed below subcategory pills (stacked layout)
+- [ ] Filter options: All, For Mom, For Partner, For Both
+- [ ] Filters the content list immediately on selection
+- [ ] Applies on both category pages and search results
+- [ ] Filters on the `audience` field in content.json
+- [ ] Smart default: read `userProfile` from localStorage on mount — default is "All" regardless of journey stage
+- [ ] User can override at any time by tapping a different pill
 
 **Sprint:** 2
 
@@ -126,10 +129,18 @@ Users referenced:
 
 **As a parent, I want to filter content by journey stage (pregnancy, newborn, first year), so that I can find what's relevant to where I am right now.**
 
-- [ ] Stage filter options: All, Pregnancy, Birth, Newborn, First Year
-- [ ] Filter available on category and search results pages
-- [ ] Filters on `stage` field in content.json
-- [ ] Default is "All"
+- [ ] Stage filter bar displayed below audience filter bar (stacked, third row)
+- [ ] Filter options: All, Pregnancy, Newborn, First Year
+- [ ] Filters the content list immediately on selection
+- [ ] Applies on both category pages and search results
+- [ ] Filters on the `stage` field in content.json
+- [ ] Smart default: read `userProfile` from localStorage on mount:
+  - `journeyStage === "expecting"` → default "Pregnancy"
+  - `journeyStage === "here"` AND birth date < 28 days ago → default "Newborn"
+  - `journeyStage === "here"` AND birth date ≥ 28 days ago → default "First Year"
+  - No localStorage data → default "All"
+- [ ] Smart default calculated once on mount — does not recalculate mid-session
+- [ ] User can override at any time by tapping a different pill
 
 **Sprint:** 2
 
@@ -173,8 +184,10 @@ Users referenced:
 
 **As a parent, I want to see which part of a result matched my search, so that I can quickly confirm it's what I'm looking for.**
 
-- [ ] Matched text is visually highlighted in result cards
-- [ ] Highlight color uses terracotta at low opacity
+- [ ] Matched text highlighted in result cards (title and description fields)
+- [ ] Highlight uses terracotta (`#C47B5A`) at 25% opacity as background
+- [ ] Leverage Fuse.js `includeMatches: true` to get character-level match indices
+- [ ] No highlighting shown when search term is empty
 
 **Sprint:** 2
 
@@ -232,8 +245,10 @@ Users referenced:
 
 - [ ] Minimum 5 items per subcategory at launch
 - [ ] All items follow the defined data model (id, title, category, subcategory, tags, description, link, imageUrl, audience, stage)
-- [ ] Content is accurate, friendly in tone, and genuinely useful
-- [ ] Images sourced from free/open image sources or product pages
+- [ ] `audience` values: `"mom"` | `"partner"` | `"both"`
+- [ ] `stage` values: `"pregnancy"` | `"newborn"` | `"first-year"` | `"all"`
+- [ ] Content is accurate, warm in tone, and genuinely useful
+- [ ] Images use placeholder URLs (Unsplash or similar) in V1 — real images in V2
 
 **Sprint:** 2
 
@@ -244,9 +259,11 @@ Users referenced:
 
 **As a developer, I want the content.json to be validated against the schema on build, so that malformed entries don't silently break the UI.**
 
-- [ ] A simple validation script checks required fields on `npm run dev` or `npm run build`
-- [ ] Console warning (not error) if any item is missing required fields
-- [ ] Identifies the offending item by ID
+- [ ] A simple Node.js validation script (`scripts/validate-content.js`) checks required fields
+- [ ] Script runs as part of `npm run dev` and `npm run build` via a `prebuild` / `predev` npm hook
+- [ ] Logs a console warning (not error) for each item missing required fields — does not block the build
+- [ ] Warning message identifies the offending item by its `id`
+- [ ] Required fields checked: `id, title, category, subcategory, description, link, audience, stage`
 
 **Sprint:** 2
 
@@ -274,8 +291,15 @@ Users referenced:
 
 **As a parent, I want clear feedback when content is loading or a section is empty, so that the app never feels broken.**
 
-- [ ] Skeleton loaders shown while content renders
-- [ ] Empty states have a helpful message and icon for: Bookmarks, Search results, filtered category with no matches
+**Priority (Sprint 2):**
+- [ ] Search no-results: `SearchX` icon + "No results for '[term]'" + "Try different keywords or browse by category"
+- [ ] Bookmarks empty: `Bookmark` icon + "Nothing saved yet" + "Tap the bookmark icon on any resource to save it here."
+
+**Stretch (Sprint 2 if time allows):**
+- [ ] Category no filter match: `FilterX` icon + "No matches for your filters" + "Clear filters" link that resets all filters to All
+
+**Deferred to Sprint 3:**
+- [ ] Skeleton loaders while content.json loads on first paint
 
 **Sprint:** 2
 
@@ -316,8 +340,8 @@ Users referenced:
 ### Sprint 2 — Depth + content
 | ID | Story | Status |
 |----|-------|--------|
-| S-007 | Audience filtering | 🔲 Backlog |
-| S-008 | Stage filtering | 🔲 Backlog |
+| S-007 | Audience filtering (smart default from localStorage) | 🔲 Backlog |
+| S-008 | Stage filtering (smart default from localStorage) | 🔲 Backlog |
 | S-011 | Search result highlighting | 🔲 Backlog |
 | S-015 | Seed content library | 🔲 Backlog |
 | S-016 | Content JSON validation | 🔲 Backlog |
