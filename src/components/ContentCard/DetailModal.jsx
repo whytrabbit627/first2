@@ -16,9 +16,9 @@ const AUDIENCE_LABELS = {
 
 const STAGE_LABELS = {
   pregnancy: 'Pregnancy',
-  birth: 'Birth',
   newborn: 'Newborn',
   'first-year': 'First Year',
+  all: 'All Stages',
 }
 
 export default function DetailModal({ item, onClose }) {
@@ -109,22 +109,16 @@ export default function DetailModal({ item, onClose }) {
 
             {/* Audience + Stage pills */}
             <div className="flex flex-wrap gap-2">
-              {audience?.map(a => (
-                <span
-                  key={a}
-                  className="bg-sage/40 text-navy text-xs font-medium rounded-full px-3 py-1"
-                >
-                  {AUDIENCE_LABELS[a] ?? a}
+              {audience && (
+                <span className="bg-sage/40 text-navy text-xs font-medium rounded-full px-3 py-1">
+                  {AUDIENCE_LABELS[audience] ?? audience}
                 </span>
-              ))}
-              {stage?.map(s => (
-                <span
-                  key={s}
-                  className="bg-terracotta/15 text-terracotta-dark text-xs font-medium rounded-full px-3 py-1"
-                >
-                  {STAGE_LABELS[s] ?? s}
+              )}
+              {stage && (
+                <span className="bg-terracotta/15 text-terracotta-dark text-xs font-medium rounded-full px-3 py-1">
+                  {STAGE_LABELS[stage] ?? stage}
                 </span>
-              ))}
+              )}
             </div>
 
             {/* Visit resource button */}
