@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ChevronLeft, SlidersHorizontal } from 'lucide-react'
+import { ChevronLeft, FilterX, SlidersHorizontal } from 'lucide-react'
 import allContent from '../data/content.json'
 import ContentCard from '../components/ContentCard/ContentCard'
 import DetailModal from '../components/ContentCard/DetailModal'
@@ -116,6 +116,11 @@ export default function Category() {
 
   const stageFilterActive = activeStage !== 'all'
 
+  function clearFilters() {
+    setActiveSubcategory('all')
+    setActiveStage(getSmartStageDefault())
+  }
+
   return (
     <div className="flex flex-col min-h-full">
       {/* Header */}
@@ -170,7 +175,19 @@ export default function Category() {
       {/* Content list */}
       <div className="flex flex-col gap-4 px-4 pt-1 pb-4">
         {filtered.length === 0 ? (
-          <p className="text-gray-400 text-sm text-center mt-8">No resources in this category yet.</p>
+          <div className="flex flex-col items-center mt-16 gap-3 text-center">
+            <FilterX size={32} className="text-gray-200" strokeWidth={1.5} />
+            <div>
+              <p className="font-semibold text-navy text-base">No matches for your filters</p>
+              <p className="text-gray-400 text-sm mt-1">Try adjusting the stage filter or subcategory</p>
+            </div>
+            <button
+              onClick={clearFilters}
+              className="text-terracotta text-sm font-medium min-h-[44px]"
+            >
+              Clear filters
+            </button>
+          </div>
         ) : (
           filtered.map(item => (
             <ContentCard

@@ -17,6 +17,10 @@ First2 is a React web app (Vite) that serves as a curated resource hub for expec
 3. **Mobile first.** Every component is designed for 375px width before larger screens.
 4. **No premature abstraction.** Don't build for V2 inside V1. If a feature is marked V2 in SPEC.md, leave a `// TODO V2:` comment and move on.
 5. **Don't invent features.** If something isn't in STORIES.md, don't build it without asking first.
+6. **Update Linear when a story is done.** When a user story is fully 
+implemented and confirmed working in the browser, move the corresponding 
+Linear issue to Done via the Linear MCP. Issue IDs follow the format F2-X 
+and are listed in STORIES.md next to each story.
 
 ---
 

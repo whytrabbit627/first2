@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { Search as SearchIcon, X } from 'lucide-react'
+import { Search as SearchIcon, SearchX, X } from 'lucide-react'
 import Fuse from 'fuse.js'
 import allContent from '../data/content.json'
 import ContentCard from '../components/ContentCard/ContentCard'
@@ -11,6 +11,29 @@ const fuse = new Fuse(allContent, {
   ignoreLocation: true,
 })
 
+// Highlight exact query string occurrences in text using a regex split.
+// Returns a ReactNode[] if the query appears in text, otherwise undefined.
+function highlightText(text, escapedQuery) {
+  const parts = text.split(new RegExp(`(${escapedQuery})`, 'gi'))
+  if (parts.length === 1) return undefined
+  return parts.map((part, i) =>
+    i % 2 === 1
+      ? <mark key={i} style={{ background: 'rgba(196,123,90,0.25)', borderRadius: 2, padding: '0 1px' }}>{part}</mark>
+      : part
+  )
+}
+
+// Build highlights map for title and description fields.
+function buildHighlights(item, query) {
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const map = {}
+  const title = highlightText(item.title, escaped)
+  const description = highlightText(item.description, escaped)
+  if (title) map.title = title
+  if (description) map.description = description
+  return map
+}
+
 export default function Search() {
   const [query, setQuery] = useState('')
   const [selectedItem, setSelectedItem] = useState(null)
@@ -18,7 +41,10 @@ export default function Search() {
   const results = useMemo(() => {
     const q = query.trim()
     if (!q) return []
-    return fuse.search(q).map(r => r.item)
+    return fuse.search(q).map(r => ({
+      item: r.item,
+      highlights: buildHighlights(r.item, q),
+    }))
   }, [query])
 
   const hasQuery = query.trim().length > 0
@@ -62,10 +88,10 @@ export default function Search() {
 
       {hasQuery && results.length === 0 && (
         <div className="flex flex-col items-center mt-16 gap-3 text-center">
-          <SearchIcon size={32} className="text-gray-200" strokeWidth={1.5} />
+          <SearchX size={32} className="text-gray-200" strokeWidth={1.5} />
           <div>
             <p className="font-semibold text-navy text-base">No results for "{query.trim()}"</p>
-            <p className="text-gray-400 text-sm mt-1">Try different keywords</p>
+            <p className="text-gray-400 text-sm mt-1">Try different keywords or browse by category</p>
           </div>
         </div>
       )}
@@ -76,10 +102,11 @@ export default function Search() {
             {results.length} result{results.length === 1 ? '' : 's'}
           </p>
           <div className="flex flex-col gap-4">
-            {results.map(item => (
+            {results.map(({ item, highlights }) => (
               <ContentCard
                 key={item.id}
                 item={item}
+                highlights={highlights}
                 onClick={setSelectedItem}
               />
             ))}

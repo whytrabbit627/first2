@@ -7,7 +7,7 @@ const PLACEHOLDER_COLORS = {
   resources: 'bg-navy/20',
 }
 
-export default function ContentCard({ item, onClick }) {
+export default function ContentCard({ item, onClick, highlights = {} }) {
   const { id, title, category, subcategory, description } = item
   const placeholderColor = PLACEHOLDER_COLORS[category] ?? 'bg-gray-100'
 
@@ -28,14 +28,14 @@ export default function ContentCard({ item, onClick }) {
               {subcategory.replace(/-/g, ' ')}
             </span>
             <h3 className="font-semibold text-navy text-sm leading-snug line-clamp-2">
-              {title}
+              {highlights.title ?? title}
             </h3>
           </div>
           <BookmarkButton itemId={id} className="-mt-1 -mr-2 shrink-0" />
         </div>
 
         <p className="text-gray-500 text-xs leading-relaxed line-clamp-3">
-          {description}
+          {highlights.description ?? description}
         </p>
       </div>
     </article>
