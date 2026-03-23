@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { ShoppingBag, Heart, BookOpen } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
 import allContent from '../data/content.json'
+import Logo from '../components/Logo/Logo'
 
 const CATEGORIES = [
   {
@@ -49,8 +50,7 @@ export default function Home() {
     <div className="px-4 py-6">
       {/* Header */}
       <div className="mb-6">
-        <h1 className="text-2xl font-semibold text-navy">First2</h1>
-        <p className="text-gray-400 text-sm mt-1">{greeting}</p>
+        <Logo size="md" />
       </div>
 
       {/* Category cards */}

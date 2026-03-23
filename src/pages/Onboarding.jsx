@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Baby, Heart } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
+import Logo from '../components/Logo/Logo'
 
 // Step 1 — journey stage selection (S-001)
 // Step 2 — date entry (S-002)
@@ -49,11 +50,7 @@ export default function Onboarding() {
     <div className="min-h-screen bg-cream flex flex-col px-4 py-10">
       {/* Header */}
       <div className="flex flex-col items-center mb-10">
-        <div className="w-14 h-14 rounded-full bg-sage flex items-center justify-center mb-3">
-          <Heart className="text-terracotta" size={28} fill="currentColor" />
-        </div>
-        <h1 className="text-2xl font-semibold text-navy tracking-tight">First2</h1>
-        <p className="text-sm text-gray-400 mt-1">Your Curated Parenting Journey</p>
+        <Logo size="lg" />
       </div>
 
       {step === 1 && (
