@@ -108,39 +108,30 @@ Users referenced:
 ---
 
 ### S-007 — Audience filtering
-> **Status: 🔲 Backlog** (Linear: F2-11)
+> **Status: ❌ Cut** — removed from V1. Audience filter row added then removed during Sprint 2 due to UI complexity. Revisit in V2.
 
-**As a partner, I want to filter content specifically for dads/partners, so that I can find resources relevant to my role.**
-
-- [ ] Audience filter bar displayed below subcategory pills (stacked layout)
-- [ ] Filter options: All, For Mom, For Partner, For Both
-- [ ] Filters the content list immediately on selection
-- [ ] Applies on both category pages and search results
-- [ ] Filters on the `audience` field in content.json
-- [ ] Smart default: read `userProfile` from localStorage on mount — default is "All" regardless of journey stage
-- [ ] User can override at any time by tapping a different pill
-
-**Sprint:** 2
+**Sprint:** V2
 
 ---
 
 ### S-008 — Stage filtering
-> **Status: 🔲 Backlog** (Linear: F2-12)
+> **Status: ✅ Done** (Linear: F2-12)
 
 **As a parent, I want to filter content by journey stage (pregnancy, newborn, first year), so that I can find what's relevant to where I am right now.**
 
-- [ ] Stage filter bar displayed below audience filter bar (stacked, third row)
-- [ ] Filter options: All, Pregnancy, Newborn, First Year
-- [ ] Filters the content list immediately on selection
-- [ ] Applies on both category pages and search results
-- [ ] Filters on the `stage` field in content.json
-- [ ] Smart default: read `userProfile` from localStorage on mount:
+- [x] Stage filter accessible via "Filter" button in category page header
+- [x] Filter button shows a terracotta dot badge when a non-default stage is active
+- [x] Tapping Filter opens a bottom sheet with stage options: All, Pregnancy, Newborn, First Year
+- [x] Tapping a stage pill filters the list immediately and closes the sheet
+- [x] Applies on category pages (search page deferred to V2)
+- [x] Filters on the `stage` field in content.json
+- [x] Smart default: read `userProfile` from localStorage on mount:
   - `journeyStage === "expecting"` → default "Pregnancy"
   - `journeyStage === "here"` AND birth date < 28 days ago → default "Newborn"
   - `journeyStage === "here"` AND birth date ≥ 28 days ago → default "First Year"
   - No localStorage data → default "All"
-- [ ] Smart default calculated once on mount — does not recalculate mid-session
-- [ ] User can override at any time by tapping a different pill
+- [x] Smart default calculated once on mount — does not recalculate mid-session
+- [x] User can override at any time by tapping a different pill
 
 **Sprint:** 2
 
@@ -180,14 +171,14 @@ Users referenced:
 ---
 
 ### S-011 — Search result highlighting
-> **Status: 🔲 Backlog** (Linear: F2-15)
+> **Status: ✅ Done** (Linear: F2-15)
 
 **As a parent, I want to see which part of a result matched my search, so that I can quickly confirm it's what I'm looking for.**
 
-- [ ] Matched text highlighted in result cards (title and description fields)
-- [ ] Highlight uses terracotta (`#C47B5A`) at 25% opacity as background
-- [ ] Leverage Fuse.js `includeMatches: true` to get character-level match indices
-- [ ] No highlighting shown when search term is empty
+- [x] Matched text highlighted in result cards (title and description fields)
+- [x] Highlight uses terracotta (`#C47B5A`) at 25% opacity as background
+- [x] Regex-based highlighting on exact query string — no character-scatter noise
+- [x] No highlighting shown when search term is empty
 
 **Sprint:** 2
 
@@ -239,31 +230,30 @@ Users referenced:
 ## Feature Area 6: Content Data
 
 ### S-015 — Seed content library
-> **Status: 🔲 Backlog** (Linear: F2-19)
+> **Status: ✅ Done** (Linear: F2-19)
 
 **As the content manager (me), I want a well-structured content.json with real seeded content across all three categories, so that the app has meaningful content to display at launch.**
 
-- [ ] Minimum 5 items per subcategory at launch
-- [ ] All items follow the defined data model (id, title, category, subcategory, tags, description, link, imageUrl, audience, stage)
-- [ ] `audience` values: `"mom"` | `"partner"` | `"both"`
-- [ ] `stage` values: `"pregnancy"` | `"newborn"` | `"first-year"` | `"all"`
-- [ ] Content is accurate, warm in tone, and genuinely useful
-- [ ] Images use placeholder URLs (Unsplash or similar) in V1 — real images in V2
+- [x] 45 items across 9 subcategories (5 per subcategory)
+- [x] All items follow the defined data model (id, title, category, subcategory, tags, description, link, imageUrl, audience, stage)
+- [x] `audience` values: `"mom"` | `"partner"` | `"both"` (scalar strings)
+- [x] `stage` values: `"pregnancy"` | `"newborn"` | `"first-year"` | `"all"` (scalar strings)
+- [x] Content is accurate, warm in tone, and genuinely useful
 
 **Sprint:** 2
 
 ---
 
 ### S-016 — Content JSON validation
-> **Status: 🔲 Backlog** (Linear: F2-20)
+> **Status: ✅ Done** (Linear: F2-20)
 
 **As a developer, I want the content.json to be validated against the schema on build, so that malformed entries don't silently break the UI.**
 
-- [ ] A simple Node.js validation script (`scripts/validate-content.js`) checks required fields
-- [ ] Script runs as part of `npm run dev` and `npm run build` via a `prebuild` / `predev` npm hook
-- [ ] Logs a console warning (not error) for each item missing required fields — does not block the build
-- [ ] Warning message identifies the offending item by its `id`
-- [ ] Required fields checked: `id, title, category, subcategory, description, link, audience, stage`
+- [x] `scripts/validate-content.js` checks required fields and valid enum values
+- [x] Runs automatically via `predev` and `prebuild` npm hooks
+- [x] Logs console warnings (not errors) — does not block the build
+- [x] Identifies offending items by `id`
+- [x] Validates: `id, title, category, subcategory, description, link, audience, stage`
 
 **Sprint:** 2
 
@@ -287,35 +277,105 @@ Users referenced:
 ---
 
 ### S-018 — Loading and empty states
-> **Status: 🔲 Backlog** (Linear: F2-22)
+> **Status: ✅ Done** (Linear: F2-22)
 
 **As a parent, I want clear feedback when content is loading or a section is empty, so that the app never feels broken.**
 
-**Priority (Sprint 2):**
-- [ ] Search no-results: `SearchX` icon + "No results for '[term]'" + "Try different keywords or browse by category"
-- [ ] Bookmarks empty: `Bookmark` icon + "Nothing saved yet" + "Tap the bookmark icon on any resource to save it here."
-
-**Stretch (Sprint 2 if time allows):**
-- [ ] Category no filter match: `FilterX` icon + "No matches for your filters" + "Clear filters" link that resets all filters to All
-
-**Deferred to Sprint 3:**
-- [ ] Skeleton loaders while content.json loads on first paint
+- [x] Search no-results: `SearchX` icon + "No results for '[term]'" + "Try different keywords or browse by category"
+- [x] Bookmarks empty: `Bookmark` icon + "Nothing saved yet" + "Tap the bookmark icon on any resource to save it here."
+- [x] Category no filter match: `FilterX` icon + "No matches for your filters" + "Clear filters" link
 
 **Sprint:** 2
 
 ---
 
-### S-019 — PWA installability (stretch)
+### S-019 — PWA installability
 > **Status: 🔲 Backlog** (Linear: F2-23)
 
 **As a parent, I want to install First2 on my phone's home screen, so that it feels like a real app without going through an app store.**
 
-- [ ] App has a valid web manifest (name, icons, theme color)
-- [ ] Service worker registered for basic offline support
+- [ ] App has a valid web manifest (`name: "First2"`, `theme_color: "#B5C9B0"`, correct icons)
+- [ ] `logo-icon.png` exported at 192×192 and 512×512 for manifest icons
+- [ ] Service worker registered for basic offline support (cache-first for static assets)
 - [ ] "Add to Home Screen" prompt works on iOS Safari and Android Chrome
 - [ ] Splash screen uses First2 logo and sage green background
 
-**Sprint:** 3 (stretch)
+**Sprint:** 3
+
+---
+
+## Feature Area 8: Tech Debt (Sprint 3)
+
+### S-020 — Add subcategory validation to validate-content.js
+> **Status: 🔲 Backlog** (Linear: F2-24)
+
+**As a developer, I want subcategory values validated on build, so that typos in subcategory slugs don't silently break pill filtering.**
+
+- [ ] Define allowed subcategory list per category in the validation script
+- [ ] Warn if any item's `subcategory` value is not in the allowed list for its `category`
+- [ ] Warning message identifies the offending item by `id`
+- [ ] Also warn if any item has an empty or missing `imageUrl` field
+
+**Sprint:** 3
+
+---
+
+### S-021 — Fix filter badge dot positioning on Filter button
+> **Status: 🔲 Backlog** (Linear: F2-25)
+
+**As a developer, I want the active-filter badge to be robustly positioned, so that it doesn't mis-align if the button layout shifts.**
+
+- [ ] Refactor badge to use inline indicator rather than absolute positioning
+- [ ] Badge remains visible and correctly placed across all screen sizes
+
+**Sprint:** 3
+
+---
+
+### S-022 — Extract StageSheet into a reusable component
+> **Status: 🔲 Backlog** (Linear: F2-26)
+
+**As a developer, I want the StageSheet extracted from Category.jsx, so that it can be reused if a second filter sheet is added.**
+
+- [ ] Extract to `src/components/StageSheet/StageSheet.jsx`
+- [ ] Accepts props: `isOpen`, `onClose`, `activeStage`, `onSelect`
+- [ ] `Category.jsx` imports and uses it with no behaviour change
+
+**Sprint:** 3
+
+---
+
+### S-023 — Add minimum length guard to search highlight regex
+> **Status: 🔲 Backlog** (Linear: F2-27)
+
+**As a parent, I want search highlighting to only appear for meaningful queries, so that single-character searches don't highlight everything.**
+
+- [ ] Highlighting only applies when `query.length >= 2`
+- [ ] Queries of 1 character return results normally with no highlighting
+
+**Sprint:** 3
+
+---
+
+### S-024 — Source and add real images for all content items
+> **Status: 🔲 Backlog** (Linear: F2-28)
+
+**As a parent, I want to see real images on content cards, so that the app feels polished and trustworthy — and so stakeholder feedback is based on real visual content.**
+
+- [ ] All 45 items in `content.json` have a populated `imageUrl` field
+- [ ] Images sourced from Unsplash (free, no attribution required) using curated keyword URLs
+- [ ] URL format: `https://source.unsplash.com/featured/800x600/?{keyword}` — no API key required
+- [ ] Each item has a distinct, contextually relevant keyword (no duplicates across items)
+- [ ] `validate-content.js` warns if any item has an empty or missing `imageUrl` (covered in S-020 AC)
+- [ ] All category pages render real images on content cards — no placeholder divs remain
+- [ ] Images display correctly in both card thumbnail and detail view
+
+**Notes:**
+- `source.unsplash.com/featured/?{keyword}` is a redirect URL — it resolves to a real Unsplash photo at runtime. No API key, no rate limits for a content-sized app.
+- The curated keyword map (45 items × 1 keyword each) is maintained in the sprint prompts doc for reproducibility.
+- V2 upgrade path: swap to Unsplash API or self-hosted images if more editorial control is needed.
+
+**Sprint:** 3 (pulled forward from V2 — needed for meaningful feedback on V1)
 
 ---
 
@@ -337,18 +397,30 @@ Users referenced:
 | S-014 | Remove a bookmark | ✅ Done |
 | S-017 | Mobile-first responsive layout | ✅ Done |
 
-### Sprint 2 — Depth + content
+### Sprint 2 — Depth + content ✅ Complete
 | ID | Story | Status |
 |----|-------|--------|
-| S-007 | Audience filtering (smart default from localStorage) | 🔲 Backlog |
-| S-008 | Stage filtering (smart default from localStorage) | 🔲 Backlog |
-| S-011 | Search result highlighting | 🔲 Backlog |
-| S-015 | Seed content library | 🔲 Backlog |
-| S-016 | Content JSON validation | 🔲 Backlog |
-| S-018 | Loading and empty states | 🔲 Backlog |
+| S-007 | Audience filtering | ❌ Cut (V2) |
+| S-008 | Stage filtering (bottom sheet) | ✅ Done |
+| S-011 | Search result highlighting | ✅ Done |
+| S-015 | Seed content library | ✅ Done |
+| S-016 | Content JSON validation | ✅ Done |
+| S-018 | Loading and empty states | ✅ Done |
 
-### Sprint 3 — Polish + stretch
+### Sprint 3 — Polish + PWA + Real Images
 | ID | Story | Status |
 |----|-------|--------|
+| S-023 | Search highlight min length guard | 🔲 Backlog |
+| S-020 | Subcategory validation (+ imageUrl check) | 🔲 Backlog |
+| S-021 | Filter badge positioning | 🔲 Backlog |
+| S-022 | Extract StageSheet component | 🔲 Backlog |
+| S-024 | Real images for all content items | 🔲 Backlog |
 | S-019 | PWA installability | 🔲 Backlog |
-| TBD | V2 features (admin panel, accounts, personalization, affiliate links) | — |
+
+### V2 — Future sprints
+| ID | Story | Status |
+|----|-------|--------|
+| TBD | User accounts + cross-device bookmarks | — |
+| TBD | Affiliate links | — |
+| TBD | Smart personalisation | — |
+| TBD | Admin CMS panel | — |
