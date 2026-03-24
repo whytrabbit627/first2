@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Baby, Heart } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
 import Logo from '../components/Logo/Logo'
+import pregnantBelly from '../assets/pregnant-belly.png'
+import babyCrib from '../assets/baby-crib.png'
 
 // Step 1 — journey stage selection (S-001)
 // Step 2 — date entry (S-002)
@@ -55,37 +56,35 @@ export default function Onboarding() {
 
       {step === 1 && (
         <div className="flex flex-col flex-1">
-          <h2 className="text-xl font-semibold text-on-background text-center mb-2">
+          <h2 className="text-2xl font-semibold text-on-background text-center mb-2">
             Where are you in your journey?
           </h2>
           <p className="text-gray-400 text-center text-sm mb-8">
             This helps us show you the most relevant resources.
           </p>
 
-          <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <button
               onClick={() => handleStageSelect('expecting')}
-              className="flex items-center gap-4 bg-surface-container-lowest rounded-3xl p-5 shadow-ambient text-left min-h-[80px] active:scale-[0.98] transition-transform"
+              className="flex flex-col items-center rounded-3xl shadow-ambient text-center active:scale-[0.97] transition-transform overflow-hidden bg-gradient-to-b from-primary-container/30 to-primary/20"
             >
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-                <Heart className="text-white" size={22} />
+              <div className="w-full aspect-square flex items-center justify-center p-4">
+                <img src={pregnantBelly} alt="" className="w-full h-full object-contain" />
               </div>
-              <div>
-                <p className="font-semibold text-on-background text-base">I'm expecting</p>
-                <p className="text-sm text-gray-400 mt-0.5">Currently pregnant</p>
+              <div className="pb-5 px-3">
+                <p className="font-semibold text-on-background text-sm">I'm expecting</p>
               </div>
             </button>
 
             <button
               onClick={() => handleStageSelect('baby-here')}
-              className="flex items-center gap-4 bg-surface-container-lowest rounded-3xl p-5 shadow-ambient text-left min-h-[80px] active:scale-[0.98] transition-transform"
+              className="flex flex-col items-center rounded-3xl shadow-ambient text-center active:scale-[0.97] transition-transform overflow-hidden bg-gradient-to-b from-secondary/20 to-secondary/10"
             >
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
-                <Baby className="text-white" size={22} />
+              <div className="w-full aspect-square flex items-center justify-center p-4">
+                <img src={babyCrib} alt="" className="w-full h-full object-contain" />
               </div>
-              <div>
-                <p className="font-semibold text-on-background text-base">My baby is here</p>
-                <p className="text-sm text-gray-400 mt-0.5">Baby has arrived</p>
+              <div className="pb-5 px-3">
+                <p className="font-semibold text-on-background text-sm">My baby is here</p>
               </div>
             </button>
           </div>
