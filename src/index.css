@@ -11,3 +11,18 @@
     font-family: 'Newsreader', Georgia, serif;
   }
 }
+
+/* react-mobile-picker: Stitch-styled selection highlight */
+@layer components {
+  /* The highlight wrapper is the last child of the picker root */
+  .picker-stitch > div:last-child {
+    background-color: rgba(83, 100, 58, 0.12);
+    border-radius: 9999px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  /* Hide the default 1px separator lines */
+  .picker-stitch > div:last-child > div {
+    display: none !important;
+  }
+}
