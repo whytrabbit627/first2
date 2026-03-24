@@ -1,205 +1,205 @@
 # SPEC.md — First2
 
-## Elevator Pitch
-First2 is a beautifully designed resource hub for expecting and new parents — covering everything from pregnancy through the first year of a baby's life. It is not a tracker. It is a curated, searchable, bookmarkable library of vetted resources organized into three clear categories: things to buy, health guidance, and informational content.
+**Version:** Sprint 5
+**Last updated:** March 2026
+**Live app:** https://first2-phi.vercel.app
+**GitHub:** https://github.com/whytrabbit627/first2
 
 ---
 
-## Target Users
-- Primary: Expecting mothers AND their partners (equal weight — both audiences are first-class citizens)
-- Context: First-time parents who feel overwhelmed by the volume and noise of information online
-- Key insight: They don't need more information — they need someone to cut through the noise for them
+## Product Overview
+
+First2 is a curated parenting resource app for expecting and new parents. It surfaces trusted, stage-relevant content across three categories: things to buy, health information, and informational resources. V1 is a read-only content experience — no backend, no auth, no database.
+
+**Tagline:** "Your Curated Parenting Journey"
 
 ---
 
-## Core Problem
-Expecting and new parents are flooded with information from unreliable, ad-heavy, or overwhelming sources. There is no single beautiful, trustworthy, curated place to go that covers the full journey from pregnancy → birth → first year — for both mom AND partner.
+## Design System — Stitch
+
+First2 uses the Stitch design language. Key principles:
+
+**Color palette:**
+| Token | Hex | Usage |
+|---|---|---|
+| Sage green | `#B5C9B0` | Primary brand, accents |
+| Terracotta | `#C47B5A` | CTA buttons, active states |
+| Navy | `#1B2D5B` | Headers, strong text |
+| Cream | `#FAF8F4` | Page backgrounds |
+
+**Typography:**
+- Headlines: Newsreader (Google Fonts, serif)
+- Body: Manrope (Google Fonts, sans-serif)
+
+**The No-Line Rule:** No 1px borders. Use tonal background shifts (surface hierarchy) or soft ambient shadows instead.
+
+**Elevation:** Shadows use `box-shadow: 0 8px 32px rgba(28,28,23,0.06)` — tinted, not pure black.
+
+**Buttons:** Pill-shaped (`border-radius: 9999px`). Primary = terracotta fill. Secondary = outline or surface shift.
+
+**Cards:** `border-radius: 1.5–2rem` ("huggable" feel). No borders.
+
+**Logo:** Two overlapping hearts forming a "2", designed by Nanobananna.
 
 ---
 
 ## Tech Stack
 
-| Layer | Choice | Rationale |
-|-------|--------|-----------|
-| Frontend | React (via Vite) | Component-based, scales to V2 admin panel, industry standard |
-| Styling | Tailwind CSS | Utility-first, fast to build clean UI |
-| Routing | React Router | Standard SPA routing |
-| State | React useState / useContext | Sufficient for V1 (bookmarks, search, filters, onboarding) |
-| Content | Local JSON file | Hand-curated, no backend needed in V1 |
-| Search | Client-side (Fuse.js) | Lightweight fuzzy search across all content |
-| Deployment | Vercel | Auto-deploys on push to main |
-| Version Control | GitHub | Source of truth |
+| Layer | Tool | Version | Notes |
+|---|---|---|---|
+| Framework | React | 18 | Functional components + hooks only |
+| Build | Vite | Latest | |
+| Styling | Tailwind CSS | v3 | Utility classes only. v4 not used. |
+| Routing | React Router | v6 | `<Link>`, `useNavigate`, `useParams` |
+| Search | Fuse.js | Latest | Client-side fuzzy search |
+| Icons | Lucide React | Latest | Consistent icon set |
+| State | useState + useContext | — | No Redux, no Zustand in V1 |
+| Persistence | localStorage | — | Bookmarks + user profile only |
+| Hosting | Vercel | — | Auto-deploys from `main` branch |
+| PWA | Vite PWA plugin | — | manifest.json + service worker |
 
 ---
 
-## Architecture Overview
+## Folder Structure
 
 ```
-src/
-├── data/
-│   └── content.json        # All curated content lives here (V1)
-├── components/
-│   ├── Layout/             # Header, nav, footer
-│   ├── ContentCard/        # Individual resource card
-│   ├── CategoryView/       # Filtered list by category
-│   ├── SearchBar/          # Global search input
-│   └── BookmarkButton/     # Toggle bookmark on any card
-├── pages/
-│   ├── Onboarding.jsx      # First launch: stage + dates (required, no skip)
-│   ├── Home.jsx            # Landing / category selector
-│   ├── Category.jsx        # Full list for a category
-│   ├── Search.jsx          # Search results view
-│   └── Bookmarks.jsx       # User's saved items
-├── hooks/
-│   ├── useBookmarks.js     # Bookmark logic (localStorage)
-│   └── useUserProfile.js   # Onboarding state (localStorage)
-└── App.jsx
+first2/
+├── public/
+│   ├── icon-192.png        # PWA icon (maskable, Sprint 5)
+│   ├── icon-512.png        # PWA icon (maskable, Sprint 5)
+│   ├── favicon.png
+│   └── manifest.json
+├── src/
+│   ├── assets/             # Static assets (logo, illustrations)
+│   ├── components/
+│   │   ├── BottomNav/
+│   │   ├── ContentCard/
+│   │   ├── DetailModal/
+│   │   ├── StageSheet/     # Reusable filter bottom sheet
+│   │   ├── HamburgerMenu/  # Sprint 5 addition
+│   │   └── SkeletonCard/
+│   ├── context/
+│   │   └── AppContext.jsx  # userProfile, bookmarks
+│   ├── data/
+│   │   └── content.json    # All content items
+│   ├── hooks/
+│   │   ├── useUserProfile.js
+│   │   └── useBookmarks.js
+│   ├── pages/
+│   │   ├── Onboarding/
+│   │   ├── Home/
+│   │   ├── Category/
+│   │   ├── Search/
+│   │   └── Bookmarks/
+│   ├── scripts/
+│   │   └── validate-content.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── SPEC.md
+├── STORIES.md
+└── CLAUDE.md
 ```
 
 ---
 
-## Data Model
+## Routing
 
-Each piece of content in `content.json` follows this shape:
+| Route | Page | Notes |
+|---|---|---|
+| `/` | Onboarding or Home | Redirect to Onboarding if `userProfile` not in localStorage |
+| `/home` | Home | Category cards + hamburger menu |
+| `/category/:slug` | Category | Subcategory + stage + audience filters |
+| `/search` | Search | Fuzzy search via Fuse.js |
+| `/bookmarks` | Bookmarks | Saved items from localStorage |
+
+---
+
+## localStorage Schema
+
+Use these exact keys. Do not invent new keys.
+
+```js
+localStorage.getItem('first2_profile')
+// JSON: { journeyStage: 'expecting' | 'here', date: 'YYYY-MM-DD' }
+
+localStorage.getItem('first2_bookmarks')
+// JSON: array of content item id strings
+```
+
+Clearing `first2_profile` and navigating to `/` triggers the full onboarding flow (used by the hamburger menu "Update my journey" action).
+
+---
+
+## Content Data Model
+
+All content lives in `src/data/content.json`. Each item:
 
 ```json
 {
-  "id": "unique-slug",
-  "title": "Honest Company Diapers",
-  "category": "items",
-  "subcategory": "diapers",
-  "tags": ["newborn", "essentials", "day-one"],
-  "description": "Why you need this and why we recommend it — plain, friendly language.",
+  "id": "string (unique)",
+  "title": "string",
+  "category": "items | health | resources",
+  "subcategory": "string",
+  "tags": ["string"],
+  "description": "string",
   "link": "https://...",
   "imageUrl": "https://...",
-  "audience": ["mom", "partner", "both"],
-  "stage": ["pregnancy", "birth", "newborn", "first-year"]
+  "audience": "all | mom | partner",
+  "stage": "pregnancy | birth | newborn | first-year | all"
 }
 ```
 
-### User Profile (localStorage, V1)
+**Validation:** `scripts/validate-content.js` runs on `npm run dev` and `npm run build` and warns on missing required fields or invalid subcategory values.
+
+---
+
+## PWA Configuration
+
+**manifest.json** must include:
 ```json
 {
-  "journeyStage": "expecting" | "baby-here",
-  "expectedDueDate": "2025-08-15",
-  "actualBirthDate": null,
-  "bookmarks": ["id-1", "id-2"]
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable any" }
+  ]
 }
 ```
-Note: `expectedDueDate` and `actualBirthDate` are captured in V1 and used for content personalization in V2.
-Cross-device bookmark sync deferred to V2 (requires user accounts).
+
+Icons must be full-bleed (artwork to edges) with important content in the center 80% safe zone.
 
 ---
 
-## Onboarding Flow (First Launch)
+## Filtering Logic
 
-**Required — no skip option.** Two inputs, shown once, stored in localStorage.
+Three filter dimensions on category pages:
+1. **Subcategory** — horizontal scrollable pills at top (always visible)
+2. **Stage** — inside StageSheet bottom sheet (All, Pregnancy, Birth, Newborn, First Year)
+3. **Audience** — inside StageSheet bottom sheet (All, For Mom, For Partners, For Both)
 
-**Path A — "I'm expecting"**
-1. Select "I'm expecting"
-2. Enter expected due date (required)
-3. Land on Home
+Filters are applied with AND logic (all active filters must match).
 
-**Path B — "My baby is here"**
-1. Select "My baby is here"
-2. Enter baby's birth date (required)
-3. Land on Home
-
-> V2 Note: These dates will power smart content surfacing — e.g. suppressing crib content during pregnancy, surfacing sleep training content at ~4 months post-birth.
+Empty state when no results: show message + "Clear filters" button. The button must reset ALL active filters (subcategory → "All", stage → "All", audience → "All") and repopulate the list immediately.
 
 ---
 
-## Content Categories (V1)
+## Hamburger Menu (Sprint 5)
 
-### 1. Items to Buy (`category: "items"`)
-- Pregnancy comfort (pillows, belly bands, maternity clothing)
-- Hospital bag (birth bag essentials for mom, partner, baby)
-- Nursery essentials (day-one must-haves)
-- Feeding (bottles, breast pumps, nursing pillows, formula prep)
-- Diapers + wipes
-- Strollers + car seats
-- Sleep gear (white noise, sleep sacks, bassinet)
-- Postpartum recovery for mom (peri bottles, sitz baths, nursing bras)
-
-### 2. Health (`category: "health"`)
-- Foods to eat / avoid during pregnancy
-- Foods to eat / avoid during breastfeeding
-- Supplements (prenatal vitamins, etc.)
-- Exercise — prenatal
-- Exercise — postpartum
-- Mental health + postpartum depression resources
-- Sleep survival for new parents
-
-### 3. Informational Resources (`category: "resources"`)
-- Pregnancy + birth (videos, articles)
-- Baby 101 (feeding, diapering, bathing)
-- For dads + partners
-- Birth plan templates
-- Finding a pediatrician checklist
-- Insurance + admin (what to prepare before baby arrives)
-- Postpartum mental health
+Located in top-left of Home screen header. Opens a drawer/sheet with:
+- "Update my journey" — clears `first2_profile` from localStorage, navigates to `/` (onboarding)
+- Dismissible via close button or tap-outside
+- Designed to scale: V2 will add Profile, Notifications, Preferences, About
 
 ---
 
-## V1 Feature Set
+## V1 Constraints (Do Not Build)
 
-| Feature | In Scope | Notes |
-|---------|----------|-------|
-| Onboarding (stage + dates, required) | ✅ | No skip — 2 inputs only |
-| Browse by category | ✅ | 3 top-level categories |
-| Browse by subcategory | ✅ | Filterable within category |
-| Content card (title, description, link, image) | ✅ | |
-| Bookmarks | ✅ | localStorage only in V1 |
-| Universal search | ✅ | Fuzzy search via Fuse.js |
-| Tag filtering | ✅ | |
-| Audience filter (mom / partner / both) | ✅ | |
-| Stage filter (pregnancy / newborn / first-year) | ✅ | |
-| Smart content personalization (based on dates) | ❌ | V2 — data captured in V1 |
-| Cross-device bookmark sync | ❌ | V2 — requires user accounts |
-| Admin content panel | ❌ | V2 |
-| User accounts / auth | ❌ | V2 |
-| Affiliate links | ❌ | V2 — requires dedicated research sprint |
-| Community / comments | ❌ | V3+ |
-| Own video content | ❌ | V2+ |
-| PWA (installable) | ⚠️ | Stretch goal V1 |
+- ❌ No user authentication
+- ❌ No backend or database
+- ❌ No affiliate links (Sprint 7)
+- ❌ No blog/markdown content (Sprint 6–7)
+- ❌ No cross-device sync (V2 with accounts)
+- ❌ No Profile tab
+- ❌ No app store submission (V2)
 
----
-
-## Design System
-
-### Brand
-- **App name:** First2
-- **Tagline:** Your Curated Parenting Journey
-- **Logo:** Two overlapping hearts forming a "2" — provided as PNG asset
-
-### Color Palette (derived from logo)
-| Token | Value | Usage |
-|-------|-------|-------|
-| Sage green | `#B5C9B0` | Backgrounds, cards, primary surfaces |
-| Terracotta | `#C47B5A` | Accent, CTAs, active states, icons |
-| Navy | `#1B2D5B` | Primary text, headings |
-| Cream | `#FAF8F4` | Page background |
-| White | `#FFFFFF` | Cards, elevated surfaces |
-
-### Principles
-- Mobile-first — most users will be on their phones
-- Warm but not cutesy — useful, not bubbly
-- Typography-forward — content is the hero
-- V1 goal: beautiful functionality. Further visual polish in V2.
-
----
-
-## Out of Scope (V1)
-- User authentication or accounts
-- Backend / database (content lives in JSON)
-- Admin CMS panel (content managed by editing JSON directly)
-- Smart content personalization (V2)
-- Cross-device bookmarks (V2)
-- Affiliate links (V2 — separate research sprint)
-- Community features (V3+)
-- Native mobile app (PWA stretch goal)
-
----
-
-## Open Questions
-_None — all decisions resolved. Ready for STORIES.md._
+Mark anything deferred with `// TODO V2:` comment.
