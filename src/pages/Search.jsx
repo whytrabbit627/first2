@@ -18,7 +18,7 @@ function highlightText(text, escapedQuery) {
   if (parts.length === 1) return undefined
   return parts.map((part, i) =>
     i % 2 === 1
-      ? <mark key={i} style={{ background: 'rgba(196,123,90,0.25)', borderRadius: 2, padding: '0 1px' }}>{part}</mark>
+      ? <mark key={i} className="bg-terracotta/25 rounded-sm px-px">{part}</mark>
       : part
   )
 }
@@ -43,7 +43,7 @@ export default function Search() {
     if (!q) return []
     return fuse.search(q).map(r => ({
       item: r.item,
-      highlights: buildHighlights(r.item, q),
+      highlights: q.length >= 2 ? buildHighlights(r.item, q) : {},
     }))
   }, [query])
 

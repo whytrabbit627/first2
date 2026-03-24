@@ -9,6 +9,11 @@ const REQUIRED_FIELDS = ['id', 'title', 'category', 'subcategory', 'description'
 const VALID_CATEGORIES = ['items', 'health', 'resources'];
 const VALID_AUDIENCES = ['mom', 'partner', 'both'];
 const VALID_STAGES = ['pregnancy', 'newborn', 'first-year', 'all'];
+const VALID_SUBCATEGORIES = {
+  items:     ['Sleep', 'Feeding', 'Gear'],
+  health:    ['Nutrition', 'Mental Health', 'Fitness'],
+  resources: ['Books', 'Apps', 'Classes'],
+};
 
 const content = JSON.parse(readFileSync(contentPath, 'utf-8'));
 let warningCount = 0;
@@ -37,6 +42,16 @@ for (const item of content) {
 
   if (item.stage && !VALID_STAGES.includes(item.stage)) {
     warn(id, `invalid stage "${item.stage}" — must be one of: ${VALID_STAGES.join(', ')}`);
+  }
+
+  if (item.category && item.subcategory && VALID_SUBCATEGORIES[item.category]) {
+    if (!VALID_SUBCATEGORIES[item.category].includes(item.subcategory)) {
+      warn(id, `invalid subcategory "${item.subcategory}" for category "${item.category}" — must be one of: ${VALID_SUBCATEGORIES[item.category].join(', ')}`);
+    }
+  }
+
+  if (!item.imageUrl || item.imageUrl === '') {
+    warn(id, `missing or empty "imageUrl" field`);
   }
 }
 

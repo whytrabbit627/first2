@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ChevronLeft, FilterX, SlidersHorizontal } from 'lucide-react'
 import allContent from '../data/content.json'
 import ContentCard from '../components/ContentCard/ContentCard'
 import DetailModal from '../components/ContentCard/DetailModal'
+import StageSheet from '../components/StageSheet/StageSheet'
+import { useAppContext } from '../context/AppContext'
 
 const CATEGORY_LABELS = {
   items: 'Items to Buy',
@@ -11,95 +13,24 @@ const CATEGORY_LABELS = {
   resources: 'Resources',
 }
 
-const STAGE_OPTIONS = [
-  { value: 'all',        label: 'All' },
-  { value: 'pregnancy',  label: 'Pregnancy' },
-  { value: 'newborn',    label: 'Newborn' },
-  { value: 'first-year', label: 'First Year' },
-]
-
-// Compute smart stage default from localStorage once on mount (S-008).
-function getSmartStageDefault() {
-  try {
-    const raw = localStorage.getItem('first2_profile')
-    if (!raw) return 'all'
-    const profile = JSON.parse(raw)
-    if (profile.journeyStage === 'expecting') return 'pregnancy'
-    if (profile.journeyStage === 'baby-here') {
-      const birth = new Date(profile.actualBirthDate)
-      const daysSinceBirth = (Date.now() - birth.getTime()) / (1000 * 60 * 60 * 24)
-      return daysSinceBirth < 28 ? 'newborn' : 'first-year'
-    }
-  } catch {
-    // malformed localStorage — fall through to default
+// Compute smart stage default from user profile (S-008).
+function computeSmartDefault(profile) {
+  if (!profile) return 'all'
+  if (profile.journeyStage === 'expecting') return 'pregnancy'
+  if (profile.journeyStage === 'baby-here') {
+    const birth = new Date(profile.actualBirthDate)
+    const daysSinceBirth = (Date.now() - birth.getTime()) / (1000 * 60 * 60 * 24)
+    return daysSinceBirth < 28 ? 'newborn' : 'first-year'
   }
   return 'all'
-}
-
-function StageSheet({ activeStage, onSelect, onClose }) {
-  const [visible, setVisible] = useState(false)
-
-  // Animate in one frame after mount
-  useEffect(() => {
-    const t = requestAnimationFrame(() => setVisible(true))
-    return () => cancelAnimationFrame(t)
-  }, [])
-
-  function handleSelect(value) {
-    onSelect(value)
-    onClose()
-  }
-
-  function handleScrimClick(e) {
-    if (e.target === e.currentTarget) onClose()
-  }
-
-  return (
-    <div
-      className={`fixed inset-0 z-50 flex flex-col justify-end transition-colors duration-300 ${
-        visible ? 'bg-black/40' : 'bg-black/0'
-      }`}
-      onClick={handleScrimClick}
-    >
-      <div
-        className={`bg-white rounded-t-3xl pb-[calc(64px+1.5rem)] transition-transform duration-[280ms] ease-out ${
-          visible ? 'translate-y-0' : 'translate-y-full'
-        }`}
-      >
-        {/* Drag handle */}
-        <div className="flex justify-center pt-3 pb-4">
-          <div className="w-10 h-1 rounded-full bg-gray-200" />
-        </div>
-
-        <div className="px-4">
-          <p className="text-sm font-semibold text-navy mb-3">Stage</p>
-          <div className="flex flex-wrap gap-2">
-            {STAGE_OPTIONS.map(({ value, label }) => {
-              const isActive = activeStage === value
-              return (
-                <button
-                  key={value}
-                  onClick={() => handleSelect(value)}
-                  className={`rounded-full px-3 py-1.5 text-sm font-medium min-h-[36px] transition-colors ${
-                    isActive ? 'bg-terracotta text-white' : 'bg-gray-100 text-gray-600'
-                  }`}
-                >
-                  {label}
-                </button>
-              )
-            })}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
 }
 
 export default function Category() {
   const { slug } = useParams()
   const navigate = useNavigate()
+  const { profile } = useAppContext()
   const [activeSubcategory, setActiveSubcategory] = useState('all')
-  const [activeStage, setActiveStage] = useState(getSmartStageDefault)
+  const [activeStage, setActiveStage] = useState(() => computeSmartDefault(profile))
   const [sheetOpen, setSheetOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(null)
 
@@ -118,7 +49,7 @@ export default function Category() {
 
   function clearFilters() {
     setActiveSubcategory('all')
-    setActiveStage(getSmartStageDefault())
+    setActiveStage(computeSmartDefault(profile))
   }
 
   return (
@@ -141,13 +72,15 @@ export default function Category() {
           {/* Filter button */}
           <button
             onClick={() => setSheetOpen(true)}
-            className="relative flex items-center gap-1.5 text-sm font-medium text-navy min-h-[44px] min-w-[44px] justify-end"
+            className="flex items-center gap-1.5 text-sm font-medium text-navy min-h-[44px] min-w-[44px] justify-end"
           >
-            <SlidersHorizontal size={16} />
+            <span className="relative">
+              <SlidersHorizontal size={16} />
+              {stageFilterActive && (
+                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-terracotta" />
+              )}
+            </span>
             <span>Filter</span>
-            {stageFilterActive && (
-              <span className="absolute top-2.5 right-0 w-2 h-2 rounded-full bg-terracotta" />
-            )}
           </button>
         </div>
       </div>
@@ -199,13 +132,12 @@ export default function Category() {
         )}
       </div>
 
-      {sheetOpen && (
-        <StageSheet
-          activeStage={activeStage}
-          onSelect={setActiveStage}
-          onClose={() => setSheetOpen(false)}
-        />
-      )}
+      <StageSheet
+        isOpen={sheetOpen}
+        onClose={() => setSheetOpen(false)}
+        activeStage={activeStage}
+        onSelect={setActiveStage}
+      />
 
       {selectedItem && (
         <DetailModal item={selectedItem} onClose={() => setSelectedItem(null)} />

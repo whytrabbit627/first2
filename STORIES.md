@@ -358,7 +358,7 @@ Users referenced:
 ---
 
 ### S-024 — Source and add real images for all content items
-> **Status: 🔲 Backlog** (Linear: F2-28)
+> **Status: 🔲 Backlog** (Linear: F2-29)
 
 **As a parent, I want to see real images on content cards, so that the app feels polished and trustworthy — and so stakeholder feedback is based on real visual content.**
 

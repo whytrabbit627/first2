@@ -1,14 +1,8 @@
 import BookmarkButton from '../BookmarkButton/BookmarkButton'
-
-// Placeholder color per category (no external images in V1)
-const PLACEHOLDER_COLORS = {
-  items: 'bg-sage',
-  health: 'bg-terracotta/30',
-  resources: 'bg-navy/20',
-}
+import { PLACEHOLDER_COLORS } from '../../utils/constants'
 
 export default function ContentCard({ item, onClick, highlights = {} }) {
-  const { id, title, category, subcategory, description } = item
+  const { id, title, category, subcategory, description, imageUrl } = item
   const placeholderColor = PLACEHOLDER_COLORS[category] ?? 'bg-gray-100'
 
   return (
@@ -16,8 +10,18 @@ export default function ContentCard({ item, onClick, highlights = {} }) {
       onClick={() => onClick?.(item)}
       className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col cursor-pointer active:scale-[0.99] transition-transform"
     >
-      {/* Image placeholder */}
-      <div className={`${placeholderColor} h-32 w-full shrink-0`} />
+      {/* Image */}
+      <div className={`${placeholderColor} h-32 w-full shrink-0`}>
+        {imageUrl && (
+          <img
+            src={imageUrl}
+            alt={title}
+            loading="lazy"
+            className="h-full w-full object-cover"
+            onError={e => { e.currentTarget.style.display = 'none' }}
+          />
+        )}
+      </div>
 
       {/* Content */}
       <div className="p-4 flex flex-col gap-2 flex-1">

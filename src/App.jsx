@@ -1,6 +1,33 @@
+import { Component } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AppProvider, useAppContext } from './context/AppContext'
 import Layout from './components/Layout/Layout'
+
+class ErrorBoundary extends Component {
+  state = { hasError: false }
+
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
+          <p className="font-semibold text-navy text-lg mb-2">Something went wrong</p>
+          <p className="text-gray-400 text-sm mb-4">Try refreshing the page.</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="bg-terracotta text-white rounded-xl px-6 py-3 font-medium text-sm min-h-[44px]"
+          >
+            Refresh
+          </button>
+        </div>
+      )
+    }
+    return this.props.children
+  }
+}
 
 // Pages (stubs — filled in per sprint)
 import Onboarding from './pages/Onboarding'
@@ -65,10 +92,12 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AppProvider>
-        <AppRoutes />
-      </AppProvider>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <AppProvider>
+          <AppRoutes />
+        </AppProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   )
 }

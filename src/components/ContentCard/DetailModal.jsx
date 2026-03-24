@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
 import { X, ExternalLink } from 'lucide-react'
 import BookmarkButton from '../BookmarkButton/BookmarkButton'
-
-const PLACEHOLDER_COLORS = {
-  items: 'bg-sage',
-  health: 'bg-terracotta/30',
-  resources: 'bg-navy/20',
-}
+import { PLACEHOLDER_COLORS } from '../../utils/constants'
 
 const AUDIENCE_LABELS = {
   mom: 'For Mom',
@@ -43,7 +38,7 @@ export default function DetailModal({ item, onClose }) {
 
   if (!item) return null
 
-  const { id, title, category, subcategory, description, tags, audience, stage, link } = item
+  const { id, title, category, subcategory, description, tags, audience, stage, link, imageUrl } = item
   const placeholderColor = PLACEHOLDER_COLORS[category] ?? 'bg-gray-100'
 
   return (
@@ -64,9 +59,19 @@ export default function DetailModal({ item, onClose }) {
         </div>
 
         {/* Scrollable body */}
-        <div className="overflow-y-auto flex-1">
-          {/* Image placeholder */}
-          <div className={`${placeholderColor} h-40 w-full`} />
+        <div className="overflow-y-auto flex-1 min-h-0">
+          {/* Image */}
+          <div className={`${placeholderColor} h-40 w-full`}>
+            {imageUrl && (
+              <img
+                src={imageUrl}
+                alt={title}
+                loading="lazy"
+                className="h-full w-full object-cover"
+                onError={e => { e.currentTarget.style.display = 'none' }}
+              />
+            )}
+          </div>
 
           {/* Content */}
           <div className="px-4 pt-4 pb-6 flex flex-col gap-4">
@@ -121,20 +126,23 @@ export default function DetailModal({ item, onClose }) {
               )}
             </div>
 
-            {/* Visit resource button */}
-            {link && (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-terracotta text-white rounded-xl px-6 py-3 font-medium text-sm min-h-[44px] mt-2 active:bg-terracotta-dark transition-colors"
-              >
-                Visit resource
-                <ExternalLink size={15} />
-              </a>
-            )}
           </div>
         </div>
+
+        {/* Sticky footer button */}
+        {link && (
+          <div className="shrink-0 px-4 pt-3 pb-[calc(64px+1.5rem)] border-t border-gray-100">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-terracotta text-white rounded-xl px-6 py-3 font-medium text-sm min-h-[44px] active:bg-terracotta-dark transition-colors"
+            >
+              Visit resource
+              <ExternalLink size={15} />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   )
