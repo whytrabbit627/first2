@@ -424,3 +424,131 @@ Users referenced:
 | TBD | Affiliate links | — |
 | TBD | Smart personalisation | — |
 | TBD | Admin CMS panel | — |
+
+# Sprint 4: Stitch Design Refresh
+
+**Goal:** Apply the Stitch design system to give First2 a polished, editorial feel.
+
+**Build order:** Stories should be implemented in this sequence (each builds on the previous).
+
+---
+
+## S-031 — Add Newsreader + Manrope fonts and update Tailwind config
+**Linear:** F2-31 | **Priority:** High | **Status:** Backlog
+
+**Goal:** Establish the typographic and color foundation from the Stitch design system.
+
+### Acceptance Criteria
+- [ ] Add Google Fonts: Newsreader (serif, for headlines) + Manrope (sans, for body)
+- [ ] Update `tailwind.config.js` with Stitch color tokens (surface hierarchy, primary/secondary refinements)
+- [ ] Set Newsreader as the font for h1, h2, h3 elements
+- [ ] Set Manrope as the default body font
+- [ ] Verify fonts load correctly in dev and production builds
+
+### Technical Notes
+
+**Font import:**
+```html
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+
+**Color tokens to add:**
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `surface` | #fcf9f0 | Main background |
+| `surface-container` | #f1eee5 | Card backgrounds |
+| `surface-container-low` | #f6f3ea | Subtle containers |
+| `surface-container-lowest` | #ffffff | Highest emphasis |
+| `primary` | #9b3f2b | Primary actions (terracotta) |
+| `primary-container` | #bb5640 | Primary hover/container |
+| `secondary` | #53643a | Secondary actions (sage) |
+| `on-background` | #1c1c17 | Text color (not pure black) |
+
+---
+
+## S-032 — Apply visual refresh (no-line rule, shadows, buttons, spacing)
+**Linear:** F2-32 | **Priority:** High | **Status:** Backlog
+
+**Goal:** Apply the Stitch "No-Line Rule" and surface philosophy across the app.
+
+### Acceptance Criteria
+- [ ] Remove 1px borders throughout — use tonal background shifts instead
+- [ ] Update button styles to pill-shaped (border-radius: 9999px), terracotta primary
+- [ ] Apply soft ambient shadows (32px blur, 6% opacity, tinted not pure black)
+- [ ] Increase border-radius on cards to 2-3rem for "huggable" feel
+- [ ] Increase whitespace/padding throughout for editorial feel
+- [ ] Replace any pure black (#000) text with on-background (#1c1c17)
+
+### Constraint
+**Keep existing card/item heights** — we're updating styling, not layout proportions.
+
+### Files likely affected
+- `App.css` / `index.css`
+- `tailwind.config.js`
+- `ContentCard.jsx`
+- `BottomNav.jsx`
+- Button styles throughout
+
+---
+
+## S-033 — Redesign onboarding: journey selection screen
+**Linear:** F2-33 | **Priority:** High | **Status:** Backlog
+
+**Goal:** Redesign the journey selection screen (first onboarding step) to match Stitch design.
+
+### Acceptance Criteria
+- [ ] Full-screen layout (no bottom nav during onboarding)
+- [ ] First2 logo + tagline at top
+- [ ] Serif headline: "Where are you in your journey?"
+- [ ] Two side-by-side illustrated cards:
+  - Left: "I'm expecting" with pregnant belly illustration (terracotta/peach gradient background)
+  - Right: "My baby is here" with baby crib illustration (sage green gradient background)
+- [ ] Cards have large border-radius, soft shadows
+- [ ] Tapping a card proceeds to the date input screen
+- [ ] Warm cream background throughout
+
+### Assets needed
+- `pregnant-belly.png` — for "I'm expecting" card
+- `baby-crib.png` — for "My baby is here" card
+
+---
+
+## S-034 — Redesign onboarding: date picker screen
+**Linear:** F2-34 | **Priority:** Medium | **Status:** Backlog
+
+**Goal:** Redesign the date input screen (second onboarding step) to match Stitch design.
+
+### Acceptance Criteria
+- [ ] Full-screen layout with back arrow (no bottom nav)
+- [ ] Serif headline: "When was your baby born?" or "When is your baby due?" (based on journey selection)
+- [ ] Replace current bottom sheet date picker with inline scroll picker:
+  - Three columns: Month, Day, Year
+  - Selected row highlighted with soft blue/sage background pill
+  - Smooth scroll behavior
+- [ ] Pill-shaped terracotta "Next" button at bottom
+- [ ] Warm cream background throughout
+
+### Technical Notes
+The scroll picker is a custom component — may need to build from scratch or find a lightweight React library. Consider:
+- `react-mobile-picker`
+- Or custom implementation with CSS scroll-snap
+
+---
+
+## S-030 — Design proper PWA app icon (stretch)
+**Linear:** F2-30 | **Priority:** Low | **Status:** Backlog
+
+**Goal:** Make the PWA icon look native/professional on home screens.
+
+### Acceptance Criteria
+- [ ] Icon looks native/professional on both iOS and Android home screens
+- [ ] Consider maskable icon format for Android adaptive icons
+
+### Options to consider
+- Full-bleed icon (hearts fill the whole square, no background box)
+- Maskable icon format (Android adaptive icon support)
+- Commission a proper app icon design
+
+### Current state
+- Icons: `public/icon-192.png`, `public/icon-512.png`
+- Generated from `src/assets/logo-icon.png` (575x564, non-square)

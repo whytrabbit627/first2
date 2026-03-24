@@ -47,7 +47,7 @@ export default function Onboarding() {
   const dateFieldName = isExpecting ? 'expectedDueDate' : 'actualBirthDate'
 
   return (
-    <div className="min-h-screen bg-cream flex flex-col px-4 py-10">
+    <div className="min-h-screen bg-surface flex flex-col px-4 py-10">
       {/* Header */}
       <div className="flex flex-col items-center mb-10">
         <Logo size="lg" />
@@ -55,7 +55,7 @@ export default function Onboarding() {
 
       {step === 1 && (
         <div className="flex flex-col flex-1">
-          <h2 className="text-xl font-semibold text-navy text-center mb-2">
+          <h2 className="text-xl font-semibold text-on-background text-center mb-2">
             Where are you in your journey?
           </h2>
           <p className="text-gray-400 text-center text-sm mb-8">
@@ -65,26 +65,26 @@ export default function Onboarding() {
           <div className="flex flex-col gap-4">
             <button
               onClick={() => handleStageSelect('expecting')}
-              className="flex items-center gap-4 bg-white rounded-2xl p-5 shadow-sm text-left min-h-[80px] active:scale-[0.98] transition-transform"
+              className="flex items-center gap-4 bg-surface-container-lowest rounded-3xl p-5 shadow-ambient text-left min-h-[80px] active:scale-[0.98] transition-transform"
             >
-              <div className="w-12 h-12 rounded-full bg-sage flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                 <Heart className="text-white" size={22} />
               </div>
               <div>
-                <p className="font-semibold text-navy text-base">I'm expecting</p>
+                <p className="font-semibold text-on-background text-base">I'm expecting</p>
                 <p className="text-sm text-gray-400 mt-0.5">Currently pregnant</p>
               </div>
             </button>
 
             <button
               onClick={() => handleStageSelect('baby-here')}
-              className="flex items-center gap-4 bg-white rounded-2xl p-5 shadow-sm text-left min-h-[80px] active:scale-[0.98] transition-transform"
+              className="flex items-center gap-4 bg-surface-container-lowest rounded-3xl p-5 shadow-ambient text-left min-h-[80px] active:scale-[0.98] transition-transform"
             >
-              <div className="w-12 h-12 rounded-full bg-terracotta flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
                 <Baby className="text-white" size={22} />
               </div>
               <div>
-                <p className="font-semibold text-navy text-base">My baby is here</p>
+                <p className="font-semibold text-on-background text-base">My baby is here</p>
                 <p className="text-sm text-gray-400 mt-0.5">Baby has arrived</p>
               </div>
             </button>
@@ -101,7 +101,7 @@ export default function Onboarding() {
             ← Back
           </button>
 
-          <h2 className="text-xl font-semibold text-navy mb-2">{dateLabel}</h2>
+          <h2 className="text-xl font-semibold text-on-background mb-2">{dateLabel}</h2>
           <p className="text-sm text-gray-400 mb-8">
             We'll use this to surface content that's relevant right now.
           </p>
@@ -113,16 +113,16 @@ export default function Onboarding() {
                 name={dateFieldName}
                 value={date}
                 onChange={e => { setDate(e.target.value); setDateError('') }}
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 text-navy text-base focus:outline-none focus:ring-2 focus:ring-sage bg-white min-h-[44px]"
+                className="w-full rounded-xl px-4 py-3 text-on-background text-base focus:outline-none focus:ring-2 focus:ring-secondary bg-surface-container min-h-[44px]"
               />
               {dateError && (
-                <p className="text-terracotta text-sm mt-2">{dateError}</p>
+                <p className="text-primary text-sm mt-2">{dateError}</p>
               )}
             </div>
 
             <button
               type="submit"
-              className="bg-terracotta text-white rounded-xl px-6 py-3 font-medium text-base min-h-[44px] active:bg-terracotta-dark transition-colors mt-2"
+              className="bg-primary text-white rounded-full px-6 py-3 font-medium text-base min-h-[44px] active:bg-primary-container transition-colors mt-2"
             >
               Let's go
             </button>

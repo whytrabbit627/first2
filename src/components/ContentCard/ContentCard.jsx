@@ -8,7 +8,7 @@ export default function ContentCard({ item, onClick, highlights = {} }) {
   return (
     <article
       onClick={() => onClick?.(item)}
-      className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col cursor-pointer active:scale-[0.99] transition-transform"
+      className="bg-surface-container-lowest rounded-3xl shadow-ambient overflow-hidden flex flex-col cursor-pointer active:scale-[0.99] transition-transform"
     >
       {/* Image */}
       <div className={`${placeholderColor} h-32 w-full shrink-0`}>
@@ -31,7 +31,7 @@ export default function ContentCard({ item, onClick, highlights = {} }) {
             <span className="inline-block bg-gray-100 text-gray-500 text-xs font-medium rounded-full px-2.5 py-0.5 mb-1.5 capitalize">
               {subcategory.replace(/-/g, ' ')}
             </span>
-            <h3 className="font-semibold text-navy text-sm leading-snug line-clamp-2">
+            <h3 className="font-semibold text-on-background text-sm leading-snug line-clamp-2">
               {highlights.title ?? title}
             </h3>
           </div>

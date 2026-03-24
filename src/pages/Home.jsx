@@ -10,27 +10,24 @@ const CATEGORIES = [
     label: 'Items to Buy',
     description: 'Gear, products, and essentials curated for every stage.',
     Icon: ShoppingBag,
-    iconBg: 'bg-sage',
+    iconBg: 'bg-secondary',
     iconColor: 'text-white',
-    accent: 'border-sage',
   },
   {
     slug: 'health',
     label: 'Health',
     description: 'Nutrition, fitness, supplements, and mental wellbeing.',
     Icon: Heart,
-    iconBg: 'bg-terracotta',
+    iconBg: 'bg-primary',
     iconColor: 'text-white',
-    accent: 'border-terracotta',
   },
   {
     slug: 'resources',
     label: 'Resources',
     description: 'Guides, checklists, and expert advice for the full journey.',
     Icon: BookOpen,
-    iconBg: 'bg-navy',
+    iconBg: 'bg-on-background',
     iconColor: 'text-white',
-    accent: 'border-navy',
   },
 ]
 
@@ -47,7 +44,7 @@ export default function Home() {
     : 'Everything you need for your new arrival.'
 
   return (
-    <div className="px-4 py-6">
+    <div className="px-4 py-6 bg-surface-container-low min-h-full">
       {/* Header */}
       <div className="mb-6">
         <Logo size="md" />
@@ -55,17 +52,17 @@ export default function Home() {
 
       {/* Category cards */}
       <div className="flex flex-col gap-4">
-        {CATEGORIES.map(({ slug, label, description, Icon, iconBg, iconColor, accent }) => (
+        {CATEGORIES.map(({ slug, label, description, Icon, iconBg, iconColor }) => (
           <button
             key={slug}
             onClick={() => navigate(`/category/${slug}`)}
-            className={`bg-white rounded-2xl shadow-sm p-5 flex items-center gap-4 text-left min-h-[88px] border-l-4 ${accent} active:scale-[0.99] transition-transform w-full`}
+            className="bg-surface-container-lowest rounded-3xl shadow-ambient p-5 flex items-center gap-4 text-left min-h-[88px] active:scale-[0.99] transition-transform w-full"
           >
             <div className={`${iconBg} w-12 h-12 rounded-full flex items-center justify-center shrink-0`}>
               <Icon className={iconColor} size={22} />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="font-semibold text-navy text-base">{label}</p>
+              <p className="font-semibold text-on-background text-base">{label}</p>
               <p className="text-gray-400 text-xs mt-0.5 leading-snug">{description}</p>
             </div>
             <span className="text-gray-300 text-xs font-medium shrink-0">

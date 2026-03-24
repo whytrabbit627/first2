@@ -20,7 +20,7 @@ export default function Bookmarks() {
 
   return (
     <div className="px-4 py-6">
-      <h1 className="text-2xl font-semibold text-navy mb-1">Saved</h1>
+      <h1 className="text-2xl font-semibold text-on-background mb-1">Saved</h1>
       <p className="text-sm text-gray-400 mb-6">
         {hasBookmarks ? `${savedItems.length} saved resource${savedItems.length === 1 ? '' : 's'}` : 'Nothing saved yet'}
       </p>
@@ -32,7 +32,7 @@ export default function Bookmarks() {
             <Bookmark size={28} className="text-gray-300" strokeWidth={1.5} />
           </div>
           <div>
-            <p className="font-semibold text-navy text-base">Nothing saved yet</p>
+            <p className="font-semibold text-on-background text-base">Nothing saved yet</p>
             <p className="text-gray-400 text-sm mt-1 leading-snug">
               Tap the bookmark icon on any resource<br />to save it here.
             </p>
@@ -65,7 +65,7 @@ export default function Bookmarks() {
       )}
 
       {selectedItem && (
-        <DetailModal item={selectedItem} onClose={() => setSelectedItem(null)} />
+        <DetailModal key={selectedItem.id} item={selectedItem} onClose={() => setSelectedItem(null)} />
       )}
     </div>
   )

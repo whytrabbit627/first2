@@ -1,4 +1,4 @@
-const CACHE_NAME = 'first2-v1'
+const CACHE_NAME = 'first2-v2'
 
 // Static assets to pre-cache on install
 const PRECACHE_URLS = [
@@ -45,6 +45,15 @@ self.addEventListener('fetch', event => {
           return response
         })
         .catch(() => caches.match(event.request))
+    )
+    return
+  }
+
+  // SPA navigation fallback — serve index.html for HTML navigation requests
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .catch(() => caches.match('/'))
     )
     return
   }

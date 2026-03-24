@@ -49,7 +49,7 @@ export default function DetailModal({ item, onClose }) {
       onClick={handleBackdropClick}
     >
       <div
-        className={`bg-white rounded-t-3xl min-h-[75vh] max-h-[88vh] flex flex-col transition-transform duration-[280ms] ease-out ${
+        className={`bg-surface-container-lowest rounded-t-3xl min-h-[75vh] max-h-[88vh] flex flex-col transition-transform duration-[280ms] ease-out ${
           visible ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
@@ -81,7 +81,7 @@ export default function DetailModal({ item, onClose }) {
                 <span className="inline-block bg-gray-100 text-gray-500 text-xs font-medium rounded-full px-2.5 py-0.5 mb-2 capitalize">
                   {subcategory.replace(/-/g, ' ')}
                 </span>
-                <h2 className="font-semibold text-navy text-lg leading-snug">{title}</h2>
+                <h2 className="font-semibold text-on-background text-lg leading-snug">{title}</h2>
               </div>
               <div className="flex items-center gap-1 shrink-0 -mt-1">
                 <BookmarkButton itemId={id} />
@@ -131,12 +131,12 @@ export default function DetailModal({ item, onClose }) {
 
         {/* Sticky footer button */}
         {link && (
-          <div className="shrink-0 px-4 pt-3 pb-[calc(64px+1.5rem)] border-t border-gray-100">
+          <div className="shrink-0 px-4 pt-3 pb-[calc(64px+1.5rem)]">
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-terracotta text-white rounded-xl px-6 py-3 font-medium text-sm min-h-[44px] active:bg-terracotta-dark transition-colors"
+              className="flex items-center justify-center gap-2 bg-primary text-white rounded-full px-6 py-3 font-medium text-sm min-h-[44px] active:bg-primary-container transition-colors"
             >
               Visit resource
               <ExternalLink size={15} />

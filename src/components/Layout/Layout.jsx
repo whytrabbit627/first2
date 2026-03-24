@@ -9,21 +9,21 @@ const tabs = [
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-cream flex flex-col">
+    <div className="min-h-screen bg-surface-container-low flex flex-col">
       {/* Scrollable page content — bottom padding clears the nav bar */}
       <main className="flex-1 overflow-y-auto pb-20">
         {children}
       </main>
 
       {/* Bottom navigation bar */}
-      <nav className="fixed bottom-0 inset-x-0 bg-white border-t border-gray-100 flex z-50">
+      <nav className="fixed bottom-0 inset-x-0 bg-white/80 backdrop-blur-xl flex z-50 shadow-[0_-2px_24px_rgba(28,28,23,0.04)]">
         {tabs.map(({ to, label, Icon }) => (
           <NavLink
             key={to}
             to={to}
             className={({ isActive }) =>
               `flex flex-1 flex-col items-center justify-center gap-1 min-h-[56px] text-xs font-medium transition-colors ${
-                isActive ? 'text-terracotta' : 'text-gray-400'
+                isActive ? 'text-primary' : 'text-gray-400'
               }`
             }
           >

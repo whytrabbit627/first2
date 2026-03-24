@@ -65,19 +65,19 @@ export default function Category() {
         </button>
         <div className="flex items-center justify-between">
           <div className="flex items-baseline gap-2">
-            <h1 className="text-xl font-semibold text-navy">{label}</h1>
+            <h1 className="text-xl font-semibold text-on-background">{label}</h1>
             <span className="text-sm text-gray-400">{filtered.length} resources</span>
           </div>
 
           {/* Filter button */}
           <button
             onClick={() => setSheetOpen(true)}
-            className="flex items-center gap-1.5 text-sm font-medium text-navy min-h-[44px] min-w-[44px] justify-end"
+            className="flex items-center gap-1.5 text-sm font-medium text-on-background min-h-[44px] min-w-[44px] justify-end"
           >
             <span className="relative">
               <SlidersHorizontal size={16} />
               {stageFilterActive && (
-                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-terracotta" />
+                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-primary" />
               )}
             </span>
             <span>Filter</span>
@@ -95,7 +95,7 @@ export default function Category() {
                 key={sub}
                 onClick={() => setActiveSubcategory(sub)}
                 className={`rounded-full px-4 py-1.5 text-sm font-medium whitespace-nowrap min-h-[36px] transition-colors ${
-                  isActive ? 'bg-terracotta text-white' : 'bg-gray-100 text-gray-600'
+                  isActive ? 'bg-primary text-white' : 'bg-surface-container text-gray-600'
                 }`}
               >
                 {sub === 'all' ? 'All' : sub.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
@@ -111,12 +111,12 @@ export default function Category() {
           <div className="flex flex-col items-center mt-16 gap-3 text-center">
             <FilterX size={32} className="text-gray-200" strokeWidth={1.5} />
             <div>
-              <p className="font-semibold text-navy text-base">No matches for your filters</p>
+              <p className="font-semibold text-on-background text-base">No matches for your filters</p>
               <p className="text-gray-400 text-sm mt-1">Try adjusting the stage filter or subcategory</p>
             </div>
             <button
               onClick={clearFilters}
-              className="text-terracotta text-sm font-medium min-h-[44px]"
+              className="text-primary text-sm font-medium min-h-[44px]"
             >
               Clear filters
             </button>
@@ -140,7 +140,7 @@ export default function Category() {
       />
 
       {selectedItem && (
-        <DetailModal item={selectedItem} onClose={() => setSelectedItem(null)} />
+        <DetailModal key={selectedItem.id} item={selectedItem} onClose={() => setSelectedItem(null)} />
       )}
     </div>
   )

@@ -51,7 +51,7 @@ export default function Search() {
 
   return (
     <div className="flex flex-col min-h-full px-4 py-6">
-      <h1 className="text-2xl font-semibold text-navy mb-4">Search</h1>
+      <h1 className="text-2xl font-semibold text-on-background mb-4">Search</h1>
 
       {/* Search input */}
       <div className="relative mb-6">
@@ -65,7 +65,7 @@ export default function Search() {
           onChange={e => setQuery(e.target.value)}
           placeholder="Search resources…"
           autoComplete="off"
-          className="w-full bg-white border border-gray-200 rounded-xl pl-10 pr-10 py-3 text-navy text-sm focus:outline-none focus:ring-2 focus:ring-sage min-h-[44px]"
+          className="w-full bg-surface-container rounded-xl pl-10 pr-10 py-3 text-on-background text-sm focus:outline-none focus:ring-2 focus:ring-secondary min-h-[44px]"
         />
         {hasQuery && (
           <button
@@ -90,7 +90,7 @@ export default function Search() {
         <div className="flex flex-col items-center mt-16 gap-3 text-center">
           <SearchX size={32} className="text-gray-200" strokeWidth={1.5} />
           <div>
-            <p className="font-semibold text-navy text-base">No results for "{query.trim()}"</p>
+            <p className="font-semibold text-on-background text-base">No results for "{query.trim()}"</p>
             <p className="text-gray-400 text-sm mt-1">Try different keywords or browse by category</p>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Search() {
       )}
 
       {selectedItem && (
-        <DetailModal item={selectedItem} onClose={() => setSelectedItem(null)} />
+        <DetailModal key={selectedItem.id} item={selectedItem} onClose={() => setSelectedItem(null)} />
       )}
     </div>
   )

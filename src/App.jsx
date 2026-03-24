@@ -14,11 +14,11 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
-          <p className="font-semibold text-navy text-lg mb-2">Something went wrong</p>
+          <p className="font-semibold text-on-background text-lg mb-2">Something went wrong</p>
           <p className="text-gray-400 text-sm mb-4">Try refreshing the page.</p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-terracotta text-white rounded-xl px-6 py-3 font-medium text-sm min-h-[44px]"
+            className="bg-primary text-white rounded-full px-6 py-3 font-medium text-sm min-h-[44px]"
           >
             Refresh
           </button>

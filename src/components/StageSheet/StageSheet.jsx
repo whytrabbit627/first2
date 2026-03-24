@@ -35,7 +35,7 @@ export default function StageSheet({ isOpen, onClose, activeStage, onSelect }) {
       onClick={handleScrimClick}
     >
       <div
-        className={`bg-white rounded-t-3xl pb-[calc(64px+1.5rem)] transition-transform duration-[280ms] ease-out ${
+        className={`bg-surface-container-lowest rounded-t-3xl pb-[calc(64px+1.5rem)] transition-transform duration-[280ms] ease-out ${
           visible ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
@@ -45,7 +45,7 @@ export default function StageSheet({ isOpen, onClose, activeStage, onSelect }) {
         </div>
 
         <div className="px-4">
-          <p className="text-sm font-semibold text-navy mb-3">Stage</p>
+          <p className="text-sm font-semibold text-on-background mb-3">Stage</p>
           <div className="flex flex-wrap gap-2">
             {STAGE_OPTIONS.map(({ value, label }) => {
               const isActive = activeStage === value
@@ -54,7 +54,7 @@ export default function StageSheet({ isOpen, onClose, activeStage, onSelect }) {
                   key={value}
                   onClick={() => handleSelect(value)}
                   className={`rounded-full px-3 py-1.5 text-sm font-medium min-h-[36px] transition-colors ${
-                    isActive ? 'bg-terracotta text-white' : 'bg-gray-100 text-gray-600'
+                    isActive ? 'bg-primary text-white' : 'bg-surface-container text-gray-600'
                   }`}
                 >
                   {label}
