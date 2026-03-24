@@ -201,7 +201,7 @@ export default function Onboarding() {
             </Picker>
           </div>
 
-          <div className="mt-auto pt-6">
+          <div className="mt-6">
             <button
               onClick={handleDateSubmit}
               className="w-full bg-primary text-white rounded-full px-6 py-3 font-medium text-base min-h-[44px] active:bg-primary-container transition-colors"
