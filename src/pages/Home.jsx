@@ -1,8 +1,9 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ShoppingBag, Heart, BookOpen } from 'lucide-react'
+import { ShoppingBag, Heart, BookOpen, Menu } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
 import allContent from '../data/content.json'
-import Logo from '../components/Logo/Logo'
+import HamburgerMenu from '../components/HamburgerMenu/HamburgerMenu'
 
 const CATEGORIES = [
   {
@@ -38,16 +39,20 @@ function categoryCount(slug) {
 export default function Home() {
   const { profile } = useAppContext()
   const navigate = useNavigate()
-
-  const greeting = profile?.journeyStage === 'expecting'
-    ? 'Your pregnancy journey starts here.'
-    : 'Everything you need for your new arrival.'
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <div className="px-4 py-6 bg-surface-container-low min-h-full">
       {/* Header */}
-      <div className="mb-6">
-        <Logo size="md" />
+      <div className="relative flex items-center justify-center mb-6 min-h-[44px]">
+        <button
+          onClick={() => setMenuOpen(true)}
+          aria-label="Open menu"
+          className="absolute left-0 min-h-[44px] min-w-[44px] flex items-center justify-center text-on-background"
+        >
+          <Menu size={22} />
+        </button>
+        <span className="font-semibold text-on-background text-base">First2</span>
       </div>
 
       {/* Category cards */}
@@ -71,6 +76,8 @@ export default function Home() {
           </button>
         ))}
       </div>
+
+      <HamburgerMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </div>
   )
 }

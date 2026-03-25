@@ -31,6 +31,7 @@ export default function Category() {
   const { profile } = useAppContext()
   const [activeSubcategory, setActiveSubcategory] = useState('all')
   const [activeStage, setActiveStage] = useState(() => computeSmartDefault(profile))
+  const [activeAudience, setActiveAudience] = useState('all')
   const [sheetOpen, setSheetOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(null)
 
@@ -40,16 +41,18 @@ export default function Category() {
   // Derive unique subcategories from items in this category
   const subcategories = ['all', ...new Set(categoryItems.map(item => item.subcategory))]
 
-  // AND subcategory + stage filters
+  // AND subcategory + stage + audience filters
   const filtered = categoryItems
     .filter(item => activeSubcategory === 'all' || item.subcategory === activeSubcategory)
     .filter(item => activeStage === 'all' || item.stage === activeStage)
+    .filter(item => activeAudience === 'all' || item.audience === activeAudience)
 
-  const stageFilterActive = activeStage !== 'all'
+  const filterActive = activeStage !== 'all' || activeAudience !== 'all'
 
   function clearFilters() {
     setActiveSubcategory('all')
-    setActiveStage(computeSmartDefault(profile))
+    setActiveStage('all')
+    setActiveAudience('all')
   }
 
   return (
@@ -76,7 +79,7 @@ export default function Category() {
           >
             <span className="relative">
               <SlidersHorizontal size={16} />
-              {stageFilterActive && (
+              {filterActive && (
                 <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-primary" />
               )}
             </span>
@@ -137,6 +140,8 @@ export default function Category() {
         onClose={() => setSheetOpen(false)}
         activeStage={activeStage}
         onSelect={setActiveStage}
+        activeAudience={activeAudience}
+        onAudienceSelect={setActiveAudience}
       />
 
       {selectedItem && (
