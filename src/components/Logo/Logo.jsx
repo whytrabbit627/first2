@@ -1,4 +1,4 @@
-import logoIcon from '../../assets/logo-icon.png'
+import logoIcon from '/icon-1024.png'
 
 export default function Logo({ size = 'sm' }) {
   // sm — icon only, 24px (sub-page brand mark)
