@@ -251,3 +251,102 @@ Cross-link content cards to related blog posts where relevant.
 - Profile tab with preferences
 - Admin content management UI
 - App store submission (iOS + Android via Capacitor or similar)
+
+# First2 — Sprint 7 Stories
+## Polish & Personalization
+
+| ID | Title | Status | Size | Priority |
+|---|---|---|---|---|
+| F2-47 | Add baby name field to onboarding date screen | Todo | S | 1 |
+| F2-48 | Gear icon → re-enter onboarding | Todo | S | 2 |
+| F2-38 | Baby name + age display (Home header + persistent) | Todo | M | 3 |
+| F2-46 | Image audit & cleanup | Todo | M | 4 |
+| F2-49 | UI consistency pass | Todo | S | 5 |
+
+---
+
+## F2-47 — Add baby name field to onboarding date screen
+**Size:** S | **Priority:** 1 (data foundation for sprint)
+
+**As a** new user completing onboarding,
+**I want** to optionally enter my baby's name on the date screen,
+**So that** the app can greet me personally throughout my experience.
+
+**Acceptance Criteria:**
+- [ ] Optional text input on date picker screen, label: "Baby's name (optional)"
+- [ ] Placeholder: "e.g. Lila"
+- [ ] Saves to localStorage key `babyName` on submit
+- [ ] Pre-fills when user re-enters onboarding
+- [ ] Empty = not set, UI falls back to generic copy
+- [ ] Max 50 characters, matches existing input styling
+
+---
+
+## F2-48 — Gear icon → re-enter onboarding
+**Size:** S | **Priority:** 2
+
+**As a** returning user who wants to update my profile,
+**I want** a gear icon in the header that takes me back into onboarding,
+**So that** I can update my baby's name, date, or journey stage without needing a separate settings screen.
+
+**Acceptance Criteria:**
+- [ ] Lucide `Settings` icon in top-right of app header
+- [ ] Navigates to start of onboarding flow
+- [ ] Existing localStorage values pre-fill on re-entry
+- [ ] On completing onboarding → returns to Home
+- [ ] aria-label: "Edit profile"
+- [ ] Icon color: Navy #1B2D5B or inherited
+
+---
+
+## F2-49 — Baby name + age display (Home header + persistent)
+**Size:** M | **Priority:** 3 | **Depends on:** F2-47
+
+**As a** returning user,
+**I want** to see my baby's name and age on the Home screen and in the header,
+**So that** the app feels personal and relevant to where I am in my journey.
+
+**Acceptance Criteria:**
+
+Home header:
+- [ ] Name set: "Hi, [Name] is [X weeks/months] old 👶"
+- [ ] Name not set: "Your baby is [X weeks/months] old 👶"
+- [ ] Expecting: "You're [X weeks] along 🌱"
+- [ ] Age: weeks if < 12 weeks, months if ≥ 12 weeks
+
+Persistent header:
+- [ ] Subtle name or age in app header/nav area
+- [ ] No name → age only (e.g. "4 weeks")
+- [ ] Responsive — doesn't crowd on small screens
+
+---
+
+## F2-46 — Image audit & cleanup
+**Size:** M | **Priority:** 4 (independent)
+
+**As a** user browsing content,
+**I want** all post images to load correctly and look polished,
+**So that** the app feels production-ready.
+
+**Acceptance Criteria:**
+- [ ] All 45 posts reviewed for image field
+- [ ] No broken URLs or placeholder images
+- [ ] Alt text on all images
+- [ ] Posts without images use consistent fallback
+- [ ] Audit log of changed posts delivered
+
+---
+
+## F2-49 — UI consistency pass
+**Size:** S | **Priority:** 5 (final)
+
+**As a** user navigating the app,
+**I want** a consistent visual experience across all screens,
+**So that** the app feels polished and intentional.
+
+**Acceptance Criteria:**
+- [ ] All screens reviewed: Home, Search, Bookmarks, Post detail, Onboarding
+- [ ] Spacing, typography, color tokens consistent throughout
+- [ ] No console errors on any screen
+- [ ] Tested at iPhone SE + standard viewport
+- [ ] Bugs found → new Linear tickets (not fixed in scope)

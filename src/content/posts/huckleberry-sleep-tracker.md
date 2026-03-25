@@ -3,11 +3,11 @@ title: Huckleberry — Baby & Toddler Sleep Tracker
 slug: huckleberry-sleep-tracker
 category: resources
 subcategory: Apps
-stage: newborn
+stage: first-year
 audience: both
 summary: Tracks feeds, sleep, and nappy changes and uses the data to generate a personalised SweetSpot nap prediction. Widely considered the best sleep-tracking app for infants.
 tags: [app, sleep tracker, schedule, nap, SweetSpot]
-imageUrl: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-nVGT7ljsogk?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

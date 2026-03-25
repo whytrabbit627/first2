@@ -3,11 +3,11 @@ title: Peanut — Meet Your Mom Tribe
 slug: peanut-mom-community-app
 category: resources
 subcategory: Apps
-stage: pregnancy
+stage: first-year
 audience: mom
 summary: A social networking app designed specifically for women navigating pregnancy, motherhood, and fertility. Find local mums at the same stage, join topic-based groups, and get peer support from people who truly understand.
 tags: [app, community, mom friends, social, local]
-imageUrl: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-PRG0sZLU0LY?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

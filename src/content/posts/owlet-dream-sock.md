@@ -3,11 +3,11 @@ title: Owlet Dream Sock Baby Monitor
 slug: owlet-dream-sock
 category: items
 subcategory: Sleep
-stage: newborn
+stage: first-year
 audience: both
 summary: A smart sock that tracks your baby's oxygen levels and heart rate while they sleep, sending alerts to your phone if readings go outside normal ranges. Controversial among some paediatricians but beloved by anxious parents.
 tags: [monitor, oxygen, heart rate, peace of mind]
-imageUrl: https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-EytWx3BOrwI?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

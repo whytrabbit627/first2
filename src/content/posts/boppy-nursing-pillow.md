@@ -3,11 +3,11 @@ title: Boppy Original Nursing Pillow
 slug: boppy-nursing-pillow
 category: items
 subcategory: Feeding
-stage: newborn
+stage: first-year
 audience: both
 summary: A C-shaped pillow that wraps around your waist to bring baby up to breast or bottle height, saving your back and arms during feeds. One of the most-used baby items in the first year.
 tags: [nursing pillow, breastfeeding, bottle feeding, support]
-imageUrl: https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-37atKgJfqio?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

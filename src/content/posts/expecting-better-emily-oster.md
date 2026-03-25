@@ -7,7 +7,7 @@ stage: pregnancy
 audience: both
 summary: An economist applies rigorous data analysis to the standard advice given to pregnant women and finds a lot of it doesn't hold up. A genuinely empowering read that helps you understand actual risk levels and make informed decisions.
 tags: [book, evidence-based, pregnancy, data, risk]
-imageUrl: https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-x5ZZf0qZy0c?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

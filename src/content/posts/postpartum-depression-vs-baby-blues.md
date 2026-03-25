@@ -3,7 +3,7 @@ title: Recognising Postpartum Depression vs. Baby Blues
 slug: postpartum-depression-vs-baby-blues
 category: health
 subcategory: Mental Health
-stage: newborn
+stage: first-year
 audience: both
 summary: Baby blues affect up to 80% of new mothers and typically resolve within two weeks. PPD is different — more persistent, more intense, and very treatable. Here's how to tell the difference.
 tags: [PPD, baby blues, mental health, postpartum, symptoms]

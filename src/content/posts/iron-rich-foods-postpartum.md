@@ -3,7 +3,7 @@ title: Iron-Rich Foods for Postpartum Recovery
 slug: iron-rich-foods-postpartum
 category: health
 subcategory: Nutrition
-stage: newborn
+stage: first-year
 audience: mom
 summary: Blood loss during birth depletes iron, contributing to the postpartum fatigue that hits so many new mothers hard. Here's how to replenish through food and when supplementation makes sense.
 tags: [iron, postpartum, nutrition, fatigue, anaemia]

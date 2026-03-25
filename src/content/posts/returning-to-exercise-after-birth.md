@@ -3,7 +3,7 @@ title: Returning to Exercise After Birth — What No One Tells You
 slug: returning-to-exercise-after-birth
 category: health
 subcategory: Fitness
-stage: newborn
+stage: first-year
 audience: mom
 summary: The traditional "6-week clearance" is not a green light to return to everything. This guide explains the stages of postpartum recovery and a progressive approach to returning to activity without setting back your healing.
 tags: [postpartum fitness, recovery, diastasis recti, return to exercise]

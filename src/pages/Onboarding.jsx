@@ -26,11 +26,12 @@ function buildDateString(month, day, year) {
 }
 
 export default function Onboarding() {
-  const { saveProfile } = useAppContext()
+  const { saveProfile, profile } = useAppContext()
   const navigate = useNavigate()
 
   const [step, setStep] = useState(1)
   const [journeyStage, setJourneyStage] = useState(null) // 'expecting' | 'baby-here'
+  const [babyName, setBabyName] = useState(profile?.babyName ?? '')
 
   // Initialize picker to current date
   const now = new Date()
@@ -68,7 +69,7 @@ export default function Onboarding() {
   function handleDateSubmit() {
     const dateStr = buildDateString(monthIndex, Number(pickerValue.day), yearNum)
 
-    const profileUpdate = { journeyStage }
+    const profileUpdate = { journeyStage, babyName: babyName.trim() }
     if (journeyStage === 'expecting') {
       profileUpdate.expectedDueDate = dateStr
       profileUpdate.actualBirthDate = null
@@ -152,6 +153,21 @@ export default function Onboarding() {
           <p className="text-sm text-gray-400 text-center mb-8">
             We'll use this to surface content that's relevant right now.
           </p>
+
+          {/* Baby name input */}
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-on-background mb-2">
+              Baby's name <span className="text-gray-400 font-normal">(optional)</span>
+            </label>
+            <input
+              type="text"
+              value={babyName}
+              onChange={e => setBabyName(e.target.value)}
+              placeholder="e.g. Lila"
+              maxLength={50}
+              className="w-full bg-surface-container-lowest rounded-2xl px-4 py-3 text-on-background text-sm placeholder-gray-300 shadow-ambient focus:outline-none focus:ring-2 focus:ring-secondary min-h-[44px]"
+            />
+          </div>
 
           {/* Scroll picker */}
           <div className="bg-surface-container-lowest rounded-3xl shadow-ambient overflow-hidden mx-auto w-full max-w-sm">

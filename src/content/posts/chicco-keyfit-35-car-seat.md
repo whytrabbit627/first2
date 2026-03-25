@@ -7,7 +7,7 @@ stage: pregnancy
 audience: both
 summary: Consistently top-rated by safety organisations, the KeyFit 35 is known for its easy, correct installation and comfortable fit for newborns. A safe, practical choice without the premium price tag.
 tags: [car seat, infant seat, travel system, safety]
-imageUrl: https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-b59D6aFI_qU?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

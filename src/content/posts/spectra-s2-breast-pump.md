@@ -3,11 +3,11 @@ title: Spectra S2 Electric Breast Pump
 slug: spectra-s2-breast-pump
 category: items
 subcategory: Feeding
-stage: newborn
+stage: first-year
 audience: mom
 summary: Widely considered the gold standard in electric breast pumps. Quiet, comfortable, and highly adjustable — and often covered by insurance in the US, so check your plan before buying.
 tags: [breast pump, pumping, breastfeeding, registry]
-imageUrl: https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-fdkjM3yh5Po?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

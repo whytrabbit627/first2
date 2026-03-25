@@ -4,6 +4,29 @@ import { ShoppingBag, Heart, BookOpen, Menu } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
 import HamburgerMenu from '../components/HamburgerMenu/HamburgerMenu'
 
+function getGreeting(profile) {
+  const today = new Date()
+
+  if (profile?.journeyStage === 'expecting' && profile.expectedDueDate) {
+    const dueDate = new Date(profile.expectedDueDate)
+    const daysUntilDue = Math.ceil((dueDate - today) / (1000 * 60 * 60 * 24))
+    const weeksAlong = Math.max(0, 40 - Math.floor(daysUntilDue / 7))
+    return `You're ${weeksAlong} weeks along 🌱`
+  }
+
+  if (profile?.actualBirthDate) {
+    const birthDate = new Date(profile.actualBirthDate)
+    const diffDays = Math.floor((today - birthDate) / (1000 * 60 * 60 * 24))
+    const weeks = Math.floor(diffDays / 7)
+    const months = Math.floor(diffDays / 30.44)
+    const age = weeks < 12 ? `${weeks} weeks` : `${months} months`
+    const name = profile.babyName?.trim()
+    return name ? `Hi, ${name} is ${age} old 👶` : `Your baby is ${age} old 👶`
+  }
+
+  return null
+}
+
 const CATEGORIES = [
   {
     slug: 'items',
@@ -43,7 +66,7 @@ export default function Home() {
   return (
     <div className="px-4 py-6 bg-surface-container-low min-h-full">
       {/* Header */}
-      <div className="relative flex items-center justify-center mb-6 min-h-[44px]">
+      <div className="relative flex items-center justify-center mb-3 min-h-[44px]">
         <button
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
@@ -53,6 +76,13 @@ export default function Home() {
         </button>
         <span className="font-semibold text-on-background text-base">First2</span>
       </div>
+
+      {/* Personalized greeting */}
+      {getGreeting(profile) && (
+        <p className="text-lg font-semibold text-on-background text-center mb-6">
+          {getGreeting(profile)}
+        </p>
+      )}
 
       {/* Category cards */}
       <div className="flex flex-col gap-4">

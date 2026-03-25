@@ -3,11 +3,11 @@ title: Newton Baby Crib Mattress
 slug: newton-baby-crib-mattress
 category: items
 subcategory: Sleep
-stage: newborn
+stage: first-year
 audience: both
 summary: A 100% breathable crib mattress that meets safe sleep guidelines. The unique Wovenaire core allows air to flow freely, and the machine-washable cover is a huge bonus in the newborn phase.
 tags: [crib mattress, breathable, safe sleep, registry]
-imageUrl: https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-AbVt7IT2PeE?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

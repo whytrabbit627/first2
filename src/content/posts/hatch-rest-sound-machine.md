@@ -3,7 +3,7 @@ title: Hatch Rest+ Baby Sound Machine & Night Light
 slug: hatch-rest-sound-machine
 category: items
 subcategory: Sleep
-stage: newborn
+stage: first-year
 audience: both
 summary: An app-controlled sound machine and night light that grows with your child. Set sleep schedules, control it remotely when baby stirs, and use the soft glow for nighttime feeds without fully waking anyone up.
 tags: [sound machine, white noise, sleep, night light]

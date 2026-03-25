@@ -3,7 +3,7 @@ title: Taking Cara Babies — Newborn Sleep Class
 slug: taking-cara-babies-sleep-class
 category: resources
 subcategory: Classes
-stage: newborn
+stage: first-year
 audience: both
 summary: One of the most popular online newborn sleep courses. Cara's approach is warm, realistic, and not prescriptive — she teaches you to read your baby's cues and survive the fourth trimester. Highly recommended by paediatric nurses.
 tags: [class, sleep, newborn, schedule, online course]

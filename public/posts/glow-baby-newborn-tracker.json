@@ -3,7 +3,7 @@
   "title": "Glow Baby — Newborn Tracker",
   "category": "resources",
   "subcategory": "Apps",
-  "stage": "newborn",
+  "stage": "first-year",
   "audience": "both",
   "summary": "A clean, well-designed tracker for the newborn phase — log feeds, nappy changes, sleep, and pumping sessions. Partner-friendly with shared account access so both parents stay on the same page.",
   "tags": [
@@ -15,7 +15,7 @@
   ],
   "affiliateUrl": "",
   "affiliateLabel": "",
-  "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+  "imageUrl": "https://images.unsplash.com/photo-lYViKuRdQ6k?w=800&q=80",
   "readingTime": "3 min read",
   "publishedAt": "2026-03-24T00:00:00.000Z",
   "draft": false,

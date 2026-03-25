@@ -3,7 +3,7 @@ title: Mindfulness for New Parents — Starting Small
 slug: mindfulness-for-new-parents
 category: health
 subcategory: Mental Health
-stage: newborn
+stage: first-year
 audience: both
 summary: You don't have time for a 30-minute meditation practice — we know. This guide is built around 2–5 minute techniques that work in the middle of a feed, a nappy change, or a sleepless 3am.
 tags: [mindfulness, meditation, stress, new parent, calm]

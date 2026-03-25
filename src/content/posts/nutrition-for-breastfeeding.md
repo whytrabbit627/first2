@@ -3,7 +3,7 @@ title: Nutrition for Breastfeeding — What Actually Matters
 slug: nutrition-for-breastfeeding
 category: health
 subcategory: Nutrition
-stage: newborn
+stage: first-year
 audience: mom
 summary: The good news is your milk quality is remarkably resilient regardless of what you eat. This evidence-based guide explains what really matters nutritionally while nursing and cuts through the noise about foods to avoid.
 tags: [breastfeeding, nutrition, postpartum, diet]

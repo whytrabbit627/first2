@@ -3,11 +3,11 @@ title: Skip Hop Forma Diaper Bag Backpack
 slug: skip-hop-forma-diaper-bag
 category: items
 subcategory: Gear
-stage: pregnancy
+stage: first-year
 audience: both
 summary: A diaper bag that doesn't look like one. Fits a laptop alongside all your baby gear, has a wipes pocket accessible with one hand, includes a changing mat, and distributes weight evenly as a backpack.
 tags: [diaper bag, backpack, changing, organisation]
-imageUrl: https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-aMca3BHUvmU?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

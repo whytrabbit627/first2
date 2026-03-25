@@ -1,6 +1,144 @@
 {
-  "generatedAt": "2026-03-25T02:08:22.866Z",
+  "generatedAt": "2026-03-25T21:17:31.421Z",
   "posts": [
+    {
+      "slug": "babywearing-workout-guide",
+      "title": "Babywearing Workouts: How to Exercise While Carrying Your Baby",
+      "category": "health",
+      "subcategory": "Fitness",
+      "stage": "first-year",
+      "audience": "both",
+      "summary": "Babywearing workouts let you stay active while keeping your baby close and content. Here's how to do it safely, what moves work best, and when to use a carrier for exercise.",
+      "tags": [
+        "babywearing",
+        "fitness",
+        "postpartum exercise",
+        "carrier workout",
+        "walking"
+      ],
+      "affiliateUrl": "",
+      "affiliateLabel": "",
+      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "readingTime": "3 min read",
+      "publishedAt": "2026-03-25T00:00:00.000Z",
+      "draft": false
+    },
+    {
+      "slug": "best-high-chairs-first-foods",
+      "title": "Best High Chairs for Baby's First Foods",
+      "category": "items",
+      "subcategory": "Gear",
+      "stage": "first-year",
+      "audience": "both",
+      "summary": "A high chair is one of the most-used pieces of baby gear from 6 months through toddlerhood. Here's what to look for and four well-regarded options across different budgets.",
+      "tags": [
+        "high chair",
+        "solid foods",
+        "gear",
+        "6 months",
+        "feeding",
+        "baby-led weaning"
+      ],
+      "affiliateUrl": "",
+      "affiliateLabel": "",
+      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+      "readingTime": "3 min read",
+      "publishedAt": "2026-03-25T00:00:00.000Z",
+      "draft": false
+    },
+    {
+      "slug": "healthy-sleep-habits-happy-child",
+      "title": "Healthy Sleep Habits, Happy Child — Marc Weissbluth",
+      "category": "resources",
+      "subcategory": "Books",
+      "stage": "first-year",
+      "audience": "both",
+      "summary": "Dr. Weissbluth's comprehensive guide to children's sleep covers newborn through school age, with practical advice on schedules, nap transitions, and gentle sleep training from 4–6 months.",
+      "tags": [
+        "sleep training",
+        "baby sleep",
+        "books",
+        "schedules",
+        "nap",
+        "4 months",
+        "6 months"
+      ],
+      "affiliateUrl": "",
+      "affiliateLabel": "",
+      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "readingTime": "3 min read",
+      "publishedAt": "2026-03-25T00:00:00.000Z",
+      "draft": false
+    },
+    {
+      "slug": "introducing-solid-foods-baby-led-weaning",
+      "title": "Introducing Solid Foods: Baby-Led Weaning vs. Purées",
+      "category": "health",
+      "subcategory": "Nutrition",
+      "stage": "first-year",
+      "audience": "both",
+      "summary": "Ready to start solids around 6 months? Here's how to choose between baby-led weaning and puréed foods — or combine both — safely and confidently.",
+      "tags": [
+        "solid foods",
+        "baby-led weaning",
+        "purées",
+        "6 months",
+        "nutrition",
+        "feeding"
+      ],
+      "affiliateUrl": "",
+      "affiliateLabel": "",
+      "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+      "readingTime": "3 min read",
+      "publishedAt": "2026-03-25T00:00:00.000Z",
+      "draft": false
+    },
+    {
+      "slug": "returning-to-running-after-birth",
+      "title": "Returning to Running After Having a Baby",
+      "category": "health",
+      "subcategory": "Fitness",
+      "stage": "first-year",
+      "audience": "mom",
+      "summary": "Running after birth requires more patience than you'd expect. Here's a science-backed guide to returning safely — protecting your pelvic floor and avoiding setbacks.",
+      "tags": [
+        "postpartum fitness",
+        "running",
+        "pelvic floor",
+        "recovery",
+        "exercise"
+      ],
+      "affiliateUrl": "",
+      "affiliateLabel": "",
+      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "readingTime": "3 min read",
+      "publishedAt": "2026-03-25T00:00:00.000Z",
+      "draft": false
+    },
+    {
+      "slug": "what-to-expect-first-year",
+      "title": "What to Expect the First Year — Heidi Murkoff",
+      "category": "resources",
+      "subcategory": "Books",
+      "stage": "first-year",
+      "audience": "both",
+      "summary": "The go-to month-by-month reference for baby's first year. Covers feeding, development milestones, sleep, health, and what's normal — organized by age so you always know where to look.",
+      "tags": [
+        "first year",
+        "baby development",
+        "milestones",
+        "books",
+        "reference",
+        "feeding",
+        "health"
+      ],
+      "affiliateUrl": "",
+      "affiliateLabel": "",
+      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "readingTime": "3 min read",
+      "publishedAt": "2026-03-25T00:00:00.000Z",
+      "draft": false
+    },
     {
       "slug": "4moms-mamaroo-swing",
       "title": "4moms mamaRoo 4 Baby Swing",
@@ -17,7 +155,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-u7EUgxESOVg?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -71,7 +209,7 @@
       "title": "Boppy Original Nursing Pillow",
       "category": "items",
       "subcategory": "Feeding",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A C-shaped pillow that wraps around your waist to bring baby up to breast or bottle height, saving your back and arms during feeds. One of the most-used baby items in the first year.",
       "tags": [
@@ -82,7 +220,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-37atKgJfqio?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -103,7 +241,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-b59D6aFI_qU?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -113,7 +251,7 @@
       "title": "Cribsheet — Emily Oster",
       "category": "resources",
       "subcategory": "Books",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "The follow-up to Expecting Better, applying the same data-driven lens to the first few years of parenting. Covers breastfeeding, sleep training, screen time, and more. Essential for parents who want to make thoughtful choices.",
       "tags": [
@@ -125,7 +263,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-P7Q3l4cbLEY?w=800&q=80",
       "readingTime": "4 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -135,7 +273,7 @@
       "title": "Dr. Brown's Natural Flow Bottles",
       "category": "items",
       "subcategory": "Feeding",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "Anti-colic bottles with an internal vent system that reduces air ingestion, helping to minimise gas and reflux. The extra parts mean slightly more washing up, but it's worth it for most families.",
       "tags": [
@@ -146,7 +284,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-SCsB3ZYpxXk?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -156,7 +294,7 @@
       "title": "Ergobaby Omni 360 Baby Carrier",
       "category": "items",
       "subcategory": "Gear",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A versatile soft-structured carrier that works from newborn through toddlerhood in four carry positions. No infant insert needed. One of the most comfortable all-day carriers available.",
       "tags": [
@@ -167,7 +305,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-yrzBgqapG1I?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -189,7 +327,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-x5ZZf0qZy0c?w=800&q=80",
       "readingTime": "4 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -211,7 +349,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-w8sQu8-YuRE?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -221,7 +359,7 @@
       "title": "Glow Baby — Newborn Tracker",
       "category": "resources",
       "subcategory": "Apps",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A clean, well-designed tracker for the newborn phase — log feeds, nappy changes, sleep, and pumping sessions. Partner-friendly with shared account access so both parents stay on the same page.",
       "tags": [
@@ -233,7 +371,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-lYViKuRdQ6k?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -254,7 +392,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-POpyiYDoouQ?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -276,7 +414,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-beF1iDFiZkA?w=800&q=80",
       "readingTime": "4 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -308,7 +446,7 @@
       "title": "Hatch Rest+ Baby Sound Machine & Night Light",
       "category": "items",
       "subcategory": "Sleep",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "An app-controlled sound machine and night light that grows with your child. Set sleep schedules, control it remotely when baby stirs, and use the soft glow for nighttime feeds without fully waking anyone up.",
       "tags": [
@@ -350,7 +488,7 @@
       "title": "Huckleberry — Baby & Toddler Sleep Tracker",
       "category": "resources",
       "subcategory": "Apps",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "Tracks feeds, sleep, and nappy changes and uses the data to generate a personalised SweetSpot nap prediction. Widely considered the best sleep-tracking app for infants.",
       "tags": [
@@ -362,7 +500,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-nVGT7ljsogk?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -372,7 +510,7 @@
       "title": "Infant CPR & First Aid — American Red Cross",
       "category": "resources",
       "subcategory": "Classes",
-      "stage": "pregnancy",
+      "stage": "first-year",
       "audience": "both",
       "summary": "Every parent and caregiver should know infant CPR before baby arrives. The Red Cross offers in-person and online options — typically a few hours. It's one of those skills you desperately hope never to use and desperately want to have.",
       "tags": [
@@ -394,7 +532,7 @@
       "title": "Iron-Rich Foods for Postpartum Recovery",
       "category": "health",
       "subcategory": "Nutrition",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "Blood loss during birth depletes iron, contributing to the postpartum fatigue that hits so many new mothers hard. Here's how to replenish through food and when supplementation makes sense.",
       "tags": [
@@ -416,7 +554,7 @@
       "title": "La Leche League — Breastfeeding Support",
       "category": "resources",
       "subcategory": "Classes",
-      "stage": "pregnancy",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "La Leche League has been supporting breastfeeding families since 1956. Attend a local group meeting during pregnancy to build relationships before you need them. Peer-to-peer support from experienced nursing parents is often the most useful kind.",
       "tags": [
@@ -460,7 +598,7 @@
       "title": "Lansinoh Breast Milk Storage Bags",
       "category": "items",
       "subcategory": "Feeding",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "Pre-sterilised, double-sealed storage bags designed to lie flat in the freezer for space-efficient stacking. Among the most leak-proof options on the market — critical when you're storing liquid gold.",
       "tags": [
@@ -471,7 +609,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-nWbJlwIrmT8?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -481,7 +619,7 @@
       "title": "Mindfulness for New Parents — Starting Small",
       "category": "health",
       "subcategory": "Mental Health",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "You don't have time for a 30-minute meditation practice — we know. This guide is built around 2–5 minute techniques that work in the middle of a feed, a nappy change, or a sleepless 3am.",
       "tags": [
@@ -503,7 +641,7 @@
       "title": "Nested Bean Zen Sack",
       "category": "items",
       "subcategory": "Sleep",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A gently weighted sleep sack that mimics the feeling of a parent's touch. The small weight on the chest helps babies feel held and secure — a thoughtful design that solves the \"set down without waking\" problem.",
       "tags": [
@@ -514,7 +652,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-tg8TBV7Xh-c?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -524,7 +662,7 @@
       "title": "Newton Baby Crib Mattress",
       "category": "items",
       "subcategory": "Sleep",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A 100% breathable crib mattress that meets safe sleep guidelines. The unique Wovenaire core allows air to flow freely, and the machine-washable cover is a huge bonus in the newborn phase.",
       "tags": [
@@ -535,7 +673,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-AbVt7IT2PeE?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -545,7 +683,7 @@
       "title": "Nutrition for Breastfeeding — What Actually Matters",
       "category": "health",
       "subcategory": "Nutrition",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "The good news is your milk quality is remarkably resilient regardless of what you eat. This evidence-based guide explains what really matters nutritionally while nursing and cuts through the noise about foods to avoid.",
       "tags": [
@@ -599,7 +737,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-ChznbDKHgOM?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -609,7 +747,7 @@
       "title": "Owlet Dream Sock Baby Monitor",
       "category": "items",
       "subcategory": "Sleep",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A smart sock that tracks your baby's oxygen levels and heart rate while they sleep, sending alerts to your phone if readings go outside normal ranges. Controversial among some paediatricians but beloved by anxious parents.",
       "tags": [
@@ -620,7 +758,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-EytWx3BOrwI?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -630,7 +768,7 @@
       "title": "Partner Mental Health — The Fourth Trimester Hits You Too",
       "category": "health",
       "subcategory": "Mental Health",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "partner",
       "summary": "Up to 1 in 10 new fathers experience depression or anxiety in the postpartum period. This honest resource explains what to look for in yourself, why it happens, and where to get help.",
       "tags": [
@@ -652,7 +790,7 @@
       "title": "Peanut — Meet Your Mom Tribe",
       "category": "resources",
       "subcategory": "Apps",
-      "stage": "pregnancy",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "A social networking app designed specifically for women navigating pregnancy, motherhood, and fertility. Find local mums at the same stage, join topic-based groups, and get peer support from people who truly understand.",
       "tags": [
@@ -664,7 +802,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-PRG0sZLU0LY?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -696,7 +834,7 @@
       "title": "Recognising Postpartum Depression vs. Baby Blues",
       "category": "health",
       "subcategory": "Mental Health",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "Baby blues affect up to 80% of new mothers and typically resolve within two weeks. PPD is different — more persistent, more intense, and very treatable. Here's how to tell the difference.",
       "tags": [
@@ -718,7 +856,7 @@
       "title": "Postpartum Support International (PSI)",
       "category": "health",
       "subcategory": "Mental Health",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "The go-to organisation for postpartum mental health. Their helpline connects you with a trained volunteer who can listen and help you find local professional support. Resources for partners too.",
       "tags": [
@@ -762,7 +900,7 @@
       "title": "Returning to Exercise After Birth — What No One Tells You",
       "category": "health",
       "subcategory": "Fitness",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "The traditional \"6-week clearance\" is not a green light to return to everything. This guide explains the stages of postpartum recovery and a progressive approach to returning to activity without setting back your healing.",
       "tags": [
@@ -804,7 +942,7 @@
       "title": "Skip Hop Forma Diaper Bag Backpack",
       "category": "items",
       "subcategory": "Gear",
-      "stage": "pregnancy",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A diaper bag that doesn't look like one. Fits a laptop alongside all your baby gear, has a wipes pocket accessible with one hand, includes a changing mat, and distributes weight evenly as a backpack.",
       "tags": [
@@ -815,7 +953,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-aMca3BHUvmU?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -836,7 +974,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-NYvRaxVZ-_M?w=800&q=80",
       "readingTime": "4 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -846,7 +984,7 @@
       "title": "Spectra S2 Electric Breast Pump",
       "category": "items",
       "subcategory": "Feeding",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "mom",
       "summary": "Widely considered the gold standard in electric breast pumps. Quiet, comfortable, and highly adjustable — and often covered by insurance in the US, so check your plan before buying.",
       "tags": [
@@ -857,7 +995,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-fdkjM3yh5Po?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -867,7 +1005,7 @@
       "title": "Taking Cara Babies — Newborn Sleep Class",
       "category": "resources",
       "subcategory": "Classes",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "One of the most popular online newborn sleep courses. Cara's approach is warm, realistic, and not prescriptive — she teaches you to read your baby's cues and survive the fourth trimester. Highly recommended by paediatric nurses.",
       "tags": [
@@ -901,7 +1039,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-XvRZZIw-ASc?w=800&q=80",
       "readingTime": "4 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -911,7 +1049,7 @@
       "title": "UPPAbaby VISTA V2 Stroller",
       "category": "items",
       "subcategory": "Gear",
-      "stage": "pregnancy",
+      "stage": "first-year",
       "audience": "both",
       "summary": "A full-featured stroller that grows from single to double as your family expands, with a reversible seat. Compatible with most infant car seat brands. A serious investment that holds its resale value extremely well.",
       "tags": [
@@ -922,7 +1060,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-kh_acn_-mPQ?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false
@@ -953,7 +1091,7 @@
       "title": "The Wonder Weeks App",
       "category": "resources",
       "subcategory": "Apps",
-      "stage": "newborn",
+      "stage": "first-year",
       "audience": "both",
       "summary": "Based on decades of research, The Wonder Weeks maps your baby's predictable developmental leaps. Knowing a leap is coming makes it so much easier to ride out the fussiness and disrupted sleep with patience.",
       "tags": [
@@ -965,7 +1103,7 @@
       ],
       "affiliateUrl": "",
       "affiliateLabel": "",
-      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-UkykVWseRJQ?w=800&q=80",
       "readingTime": "3 min read",
       "publishedAt": "2026-03-24T00:00:00.000Z",
       "draft": false

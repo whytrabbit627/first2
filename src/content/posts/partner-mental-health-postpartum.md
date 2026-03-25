@@ -3,7 +3,7 @@ title: Partner Mental Health — The Fourth Trimester Hits You Too
 slug: partner-mental-health-postpartum
 category: health
 subcategory: Mental Health
-stage: newborn
+stage: first-year
 audience: partner
 summary: Up to 1 in 10 new fathers experience depression or anxiety in the postpartum period. This honest resource explains what to look for in yourself, why it happens, and where to get help.
 tags: [partner, paternal depression, mental health, support, fourth trimester]

@@ -3,11 +3,11 @@ title: Lansinoh Breast Milk Storage Bags
 slug: lansinoh-breast-milk-storage-bags
 category: items
 subcategory: Feeding
-stage: newborn
+stage: first-year
 audience: mom
 summary: Pre-sterilised, double-sealed storage bags designed to lie flat in the freezer for space-efficient stacking. Among the most leak-proof options on the market — critical when you're storing liquid gold.
 tags: [milk storage, pumping, freezer stash, breastfeeding]
-imageUrl: https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-nWbJlwIrmT8?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

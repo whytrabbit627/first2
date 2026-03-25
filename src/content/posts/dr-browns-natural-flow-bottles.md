@@ -3,11 +3,11 @@ title: Dr. Brown's Natural Flow Bottles
 slug: dr-browns-natural-flow-bottles
 category: items
 subcategory: Feeding
-stage: newborn
+stage: first-year
 audience: both
 summary: Anti-colic bottles with an internal vent system that reduces air ingestion, helping to minimise gas and reflux. The extra parts mean slightly more washing up, but it's worth it for most families.
 tags: [bottles, anti-colic, feeding, registry]
-imageUrl: https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-SCsB3ZYpxXk?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

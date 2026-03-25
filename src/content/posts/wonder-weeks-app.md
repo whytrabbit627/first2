@@ -3,11 +3,11 @@ title: The Wonder Weeks App
 slug: wonder-weeks-app
 category: resources
 subcategory: Apps
-stage: newborn
+stage: first-year
 audience: both
 summary: Based on decades of research, The Wonder Weeks maps your baby's predictable developmental leaps. Knowing a leap is coming makes it so much easier to ride out the fussiness and disrupted sleep with patience.
 tags: [app, developmental leaps, fussy periods, milestones, brain development]
-imageUrl: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-UkykVWseRJQ?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

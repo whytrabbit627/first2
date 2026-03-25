@@ -3,7 +3,7 @@ title: La Leche League — Breastfeeding Support
 slug: la-leche-league-breastfeeding
 category: resources
 subcategory: Classes
-stage: pregnancy
+stage: first-year
 audience: mom
 summary: La Leche League has been supporting breastfeeding families since 1956. Attend a local group meeting during pregnancy to build relationships before you need them. Peer-to-peer support from experienced nursing parents is often the most useful kind.
 tags: [class, breastfeeding, support group, latch, community]
