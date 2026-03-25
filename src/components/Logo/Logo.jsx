@@ -20,7 +20,7 @@ export default function Logo({ size = 'sm' }) {
   // lg — icon + wordmark + tagline stacked, centered (Onboarding splash)
   return (
     <div className="flex flex-col items-center gap-1">
-      <img src={logoIcon} alt="First2" className="h-20 w-auto" />
+      <img src={logoIcon} alt="First2" className="h-20 w-auto rounded-2xl" />
       <span className="text-2xl font-semibold text-navy">First2</span>
       <span className="text-sm text-gray-400">Your Curated Parenting Journey</span>
     </div>
