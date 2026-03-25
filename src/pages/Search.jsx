@@ -1,15 +1,9 @@
 import { useState, useMemo } from 'react'
 import { Search as SearchIcon, SearchX, X } from 'lucide-react'
 import Fuse from 'fuse.js'
-import allContent from '../data/content.json'
+import { useAppContext } from '../context/AppContext'
 import ContentCard from '../components/ContentCard/ContentCard'
 import DetailModal from '../components/ContentCard/DetailModal'
-
-const fuse = new Fuse(allContent, {
-  keys: ['title', 'description', 'subcategory', 'tags'],
-  threshold: 0.35,
-  ignoreLocation: true,
-})
 
 // Highlight exact query string occurrences in text using a regex split.
 // Returns a ReactNode[] if the query appears in text, otherwise undefined.
@@ -35,8 +29,15 @@ function buildHighlights(item, query) {
 }
 
 export default function Search() {
+  const { allContent } = useAppContext()
   const [query, setQuery] = useState('')
   const [selectedItem, setSelectedItem] = useState(null)
+
+  const fuse = useMemo(() => new Fuse(allContent, {
+    keys: ['title', 'description', 'subcategory', 'tags'],
+    threshold: 0.35,
+    ignoreLocation: true,
+  }), [allContent])
 
   const results = useMemo(() => {
     const q = query.trim()

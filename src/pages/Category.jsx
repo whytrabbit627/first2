@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ChevronLeft, FilterX, SlidersHorizontal } from 'lucide-react'
-import allContent from '../data/content.json'
 import ContentCard from '../components/ContentCard/ContentCard'
 import DetailModal from '../components/ContentCard/DetailModal'
 import StageSheet from '../components/StageSheet/StageSheet'
@@ -28,7 +27,7 @@ function computeSmartDefault(profile) {
 export default function Category() {
   const { slug } = useParams()
   const navigate = useNavigate()
-  const { profile } = useAppContext()
+  const { profile, allContent } = useAppContext()
   const [activeSubcategory, setActiveSubcategory] = useState('all')
   const [activeStage, setActiveStage] = useState(() => computeSmartDefault(profile))
   const [activeAudience, setActiveAudience] = useState('all')

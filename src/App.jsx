@@ -35,6 +35,7 @@ import Home from './pages/Home'
 import Category from './pages/Category'
 import Search from './pages/Search'
 import Bookmarks from './pages/Bookmarks'
+import PostPage from './pages/PostPage/PostPage'
 
 function RequireProfile({ children }) {
   const { profile } = useAppContext()
@@ -82,6 +83,14 @@ function AppRoutes() {
         element={
           <RequireProfile>
             <Bookmarks />
+          </RequireProfile>
+        }
+      />
+      <Route
+        path="/posts/:slug"
+        element={
+          <RequireProfile>
+            <PostPage />
           </RequireProfile>
         }
       />

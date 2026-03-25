@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ShoppingBag, Heart, BookOpen, Menu } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
-import allContent from '../data/content.json'
 import HamburgerMenu from '../components/HamburgerMenu/HamburgerMenu'
 
 const CATEGORIES = [
@@ -32,12 +31,12 @@ const CATEGORIES = [
   },
 ]
 
-function categoryCount(slug) {
-  return allContent.filter(item => item.category === slug).length
-}
-
 export default function Home() {
-  const { profile } = useAppContext()
+  const { profile, allContent } = useAppContext()
+
+  function categoryCount(slug) {
+    return allContent.filter(item => item.category === slug).length
+  }
   const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
 

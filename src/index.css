@@ -12,6 +12,55 @@
   }
 }
 
+/* Post body — rendered markdown styles */
+@layer components {
+  .post-body h2 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1c1c17;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+  }
+  .post-body h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1c1c17;
+    margin-top: 1.25rem;
+    margin-bottom: 0.375rem;
+  }
+  .post-body p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+  }
+  .post-body ul, .post-body ol {
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+  }
+  .post-body li {
+    margin-bottom: 0.375rem;
+    line-height: 1.7;
+  }
+  .post-body ul li { list-style-type: disc; }
+  .post-body ol li { list-style-type: decimal; }
+  .post-body strong {
+    font-weight: 600;
+    color: #1c1c17;
+  }
+  .post-body a {
+    color: #9b3f2b;
+    text-decoration: underline;
+  }
+  .post-body blockquote {
+    border-left: 3px solid #B5C9B0;
+    padding-left: 1rem;
+    color: #6b7280;
+    margin: 1rem 0;
+  }
+}
+
 /* react-mobile-picker: Stitch-styled selection highlight */
 @layer components {
   /* The highlight wrapper is the last child of the picker root */

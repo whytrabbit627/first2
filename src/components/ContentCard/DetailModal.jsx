@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { X, ExternalLink } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 import BookmarkButton from '../BookmarkButton/BookmarkButton'
 import { PLACEHOLDER_COLORS } from '../../utils/constants'
 
@@ -18,6 +19,7 @@ const STAGE_LABELS = {
 
 export default function DetailModal({ item, onClose }) {
   const [visible, setVisible] = useState(false)
+  const navigate = useNavigate()
 
   // Animate in on mount
   useEffect(() => {
@@ -38,7 +40,8 @@ export default function DetailModal({ item, onClose }) {
 
   if (!item) return null
 
-  const { id, title, category, subcategory, description, tags, audience, stage, link, imageUrl } = item
+  const { id, slug, title, category, subcategory, description, tags, audience, stage, affiliateUrl, affiliateLabel, imageUrl } = item
+  const postSlug = slug ?? id
   const placeholderColor = PLACEHOLDER_COLORS[category] ?? 'bg-gray-100'
 
   return (
@@ -129,20 +132,28 @@ export default function DetailModal({ item, onClose }) {
           </div>
         </div>
 
-        {/* Sticky footer button */}
-        {link && (
-          <div className="shrink-0 px-4 pt-3 pb-[calc(64px+1.5rem)]">
+        {/* Sticky footer */}
+        <div className="shrink-0 px-4 pt-3 pb-[calc(64px+1.5rem)] flex flex-col gap-3">
+          {/* Affiliate CTA — hidden when affiliateUrl is empty */}
+          {affiliateUrl && (
             <a
-              href={link}
+              href={affiliateUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
               className="flex items-center justify-center gap-2 bg-primary text-white rounded-full px-6 py-3 font-medium text-sm min-h-[44px] active:bg-primary-container transition-colors"
             >
-              Visit resource
+              {affiliateLabel || 'Learn More'}
               <ExternalLink size={15} />
             </a>
-          </div>
-        )}
+          )}
+          {/* Read full guide */}
+          <button
+            onClick={() => { handleClose(); navigate(`/posts/${postSlug}`) }}
+            className="text-primary text-sm font-medium min-h-[44px] text-center"
+          >
+            Read the full guide →
+          </button>
+        </div>
       </div>
     </div>
   )

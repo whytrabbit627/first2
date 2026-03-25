@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Bookmark } from 'lucide-react'
 import { useAppContext } from '../context/AppContext'
-import allContent from '../data/content.json'
 import ContentCard from '../components/ContentCard/ContentCard'
 import DetailModal from '../components/ContentCard/DetailModal'
 
@@ -12,7 +11,7 @@ const GROUPS = [
 ]
 
 export default function Bookmarks() {
-  const { bookmarkIds } = useAppContext()
+  const { bookmarkIds, allContent } = useAppContext()
   const [selectedItem, setSelectedItem] = useState(null)
 
   const savedItems = allContent.filter(item => bookmarkIds.includes(item.id))
