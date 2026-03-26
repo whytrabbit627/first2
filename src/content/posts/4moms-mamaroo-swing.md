@@ -7,7 +7,7 @@ stage: newborn
 audience: both
 summary: Mimics the natural motions parents use to soothe babies in five movement patterns and speeds. App-controlled so you can adjust without disturbing a sleeping baby. Many newborns who resist other swings take to the mamaRoo.
 tags: [swing, soothing, bouncer, newborn]
-imageUrl: https://images.unsplash.com/photo-u7EUgxESOVg?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

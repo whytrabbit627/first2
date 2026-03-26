@@ -7,7 +7,7 @@ stage: pregnancy
 audience: partner
 summary: Exercise is one of the most effective stress-management tools for partners navigating pregnancy and new parenthood — but it often gets deprioritised. Here's how to maintain a realistic routine without guilt.
 tags: [partner, fitness, wellbeing, active, stress relief]
-imageUrl: https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

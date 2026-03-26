@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Every parent and caregiver should know infant CPR before baby arrives. The Red Cross offers in-person and online options — typically a few hours. It's one of those skills you desperately hope never to use and desperately want to have.
 tags: [class, CPR, first aid, safety, essential]
-imageUrl: https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

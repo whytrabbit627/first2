@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: The go-to month-by-month reference for baby's first year. Covers feeding, development milestones, sleep, health, and what's normal — organized by age so you always know where to look.
 tags: [first year, baby development, milestones, books, reference, feeding, health]
-imageUrl: https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-25

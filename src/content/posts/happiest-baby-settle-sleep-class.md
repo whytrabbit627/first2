@@ -7,7 +7,7 @@ stage: newborn
 audience: both
 summary: A short, focused online class from the team behind the SNOO and Happiest Baby on the Block. Covers the 5 S's in depth and what to realistically expect in the first 12 weeks. Free to access — no SNOO required.
 tags: [class, online, newborn, sleep, soothing]
-imageUrl: https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

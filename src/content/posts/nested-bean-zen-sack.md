@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A gently weighted sleep sack that mimics the feeling of a parent's touch. The small weight on the chest helps babies feel held and secure — a thoughtful design that solves the "set down without waking" problem.
 tags: [sleep sack, swaddle, newborn, wearable blanket]
-imageUrl: https://images.unsplash.com/photo-tg8TBV7Xh-c?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1524503033411-c9566986fc8f?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

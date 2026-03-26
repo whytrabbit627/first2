@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Anti-colic bottles with an internal vent system that reduces air ingestion, helping to minimise gas and reflux. The extra parts mean slightly more washing up, but it's worth it for most families.
 tags: [bottles, anti-colic, feeding, registry]
-imageUrl: https://images.unsplash.com/photo-SCsB3ZYpxXk?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1533483595632-c5f0e57a1936?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

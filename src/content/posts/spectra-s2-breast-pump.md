@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: Widely considered the gold standard in electric breast pumps. Quiet, comfortable, and highly adjustable — and often covered by insurance in the US, so check your plan before buying.
 tags: [breast pump, pumping, breastfeeding, registry]
-imageUrl: https://images.unsplash.com/photo-fdkjM3yh5Po?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A full-featured stroller that grows from single to double as your family expands, with a reversible seat. Compatible with most infant car seat brands. A serious investment that holds its resale value extremely well.
 tags: [stroller, pram, travel system, registry]
-imageUrl: https://images.unsplash.com/photo-kh_acn_-mPQ?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1544085311-11a028465b03?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

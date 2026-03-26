@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: A beautifully designed pregnancy tracker with personalised weekly updates, symptom logging, kick tracking, and appointment reminders. Less cluttered than other apps, and more data-focused.
 tags: [app, pregnancy tracker, symptoms, milestones, weekly updates]
-imageUrl: https://images.unsplash.com/photo-ChznbDKHgOM?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

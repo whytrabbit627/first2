@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: Running after birth requires more patience than you'd expect. Here's a science-backed guide to returning safely — protecting your pelvic floor and avoiding setbacks.
 tags: [postpartum fitness, running, pelvic floor, recovery, exercise]
-imageUrl: https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1554284126-aa88f22d8b74?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-25

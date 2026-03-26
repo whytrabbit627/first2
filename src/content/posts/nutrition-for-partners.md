@@ -7,7 +7,7 @@ stage: pregnancy
 audience: partner
 summary: Diet matters for partners too — sperm health, stress resilience, and being a genuine support through pregnancy are all influenced by what you eat. A practical, non-preachy guide to the nutrients that matter.
 tags: [partner, nutrition, fertility, support]
-imageUrl: https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

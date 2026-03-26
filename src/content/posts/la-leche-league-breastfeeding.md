@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: La Leche League has been supporting breastfeeding families since 1956. Attend a local group meeting during pregnancy to build relationships before you need them. Peer-to-peer support from experienced nursing parents is often the most useful kind.
 tags: [class, breastfeeding, support group, latch, community]
-imageUrl: https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1535572290543-960a8046f5af?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

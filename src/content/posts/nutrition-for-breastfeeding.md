@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: The good news is your milk quality is remarkably resilient regardless of what you eat. This evidence-based guide explains what really matters nutritionally while nursing and cuts through the noise about foods to avoid.
 tags: [breastfeeding, nutrition, postpartum, diet]
-imageUrl: https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

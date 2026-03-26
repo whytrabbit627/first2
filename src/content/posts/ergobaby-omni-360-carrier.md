@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A versatile soft-structured carrier that works from newborn through toddlerhood in four carry positions. No infant insert needed. One of the most comfortable all-day carriers available.
 tags: [carrier, babywearing, newborn, hands-free]
-imageUrl: https://images.unsplash.com/photo-yrzBgqapG1I?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

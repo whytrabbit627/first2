@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: The traditional "6-week clearance" is not a green light to return to everything. This guide explains the stages of postpartum recovery and a progressive approach to returning to activity without setting back your healing.
 tags: [postpartum fitness, recovery, diastasis recti, return to exercise]
-imageUrl: https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80
+imageUrl: https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&q=80
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24
