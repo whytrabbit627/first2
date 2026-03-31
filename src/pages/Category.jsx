@@ -12,16 +12,24 @@ const CATEGORY_LABELS = {
   resources: 'Resources',
 }
 
-// Compute smart stage default from user profile (S-008).
-function computeSmartDefault(profile) {
-  if (!profile) return 'all'
-  if (profile.journeyStage === 'expecting') return 'pregnancy'
-  if (profile.journeyStage === 'baby-here') {
-    const birth = new Date(profile.actualBirthDate)
-    const daysSinceBirth = (Date.now() - birth.getTime()) / (1000 * 60 * 60 * 24)
-    return daysSinceBirth < 28 ? 'newborn' : 'first-year'
+const MS_PER_DAY = 1000 * 60 * 60 * 24
+const MS_PER_WEEK = MS_PER_DAY * 7
+
+// Returns the set of stages to show automatically based on profile + proximity.
+// Manual filter overrides this; 'smart' means "use this computed set".
+function computeSmartStages(profile) {
+  if (!profile) return null // no profile → show all
+  if (profile.journeyStage === 'expecting' && profile.expectedDueDate) {
+    const weeksUntilDue = (new Date(profile.expectedDueDate) - Date.now()) / MS_PER_WEEK
+    return weeksUntilDue <= 20 ? ['pregnancy', 'newborn'] : ['pregnancy']
   }
-  return 'all'
+  if (profile.journeyStage === 'baby-here' && profile.actualBirthDate) {
+    const daysSinceBirth = (Date.now() - new Date(profile.actualBirthDate)) / MS_PER_DAY
+    if (daysSinceBirth < 28) return ['newborn']
+    if (daysSinceBirth < 90) return ['newborn', 'first-year']
+    return ['first-year']
+  }
+  return null // fallback → show all
 }
 
 export default function Category() {
@@ -29,8 +37,10 @@ export default function Category() {
   const navigate = useNavigate()
   const { profile, allContent } = useAppContext()
   const [activeSubcategory, setActiveSubcategory] = useState('all')
-  const [activeStage, setActiveStage] = useState(() => computeSmartDefault(profile))
+  // 'smart' = auto-expanded set from profile; 'all' or a specific stage = manual override
+  const [activeStage, setActiveStage] = useState('smart')
   const [activeAudience, setActiveAudience] = useState('all')
+  const smartStages = computeSmartStages(profile)
   const [sheetOpen, setSheetOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(null)
 
@@ -43,14 +53,19 @@ export default function Category() {
   // AND subcategory + stage + audience filters
   const filtered = categoryItems
     .filter(item => activeSubcategory === 'all' || item.subcategory === activeSubcategory)
-    .filter(item => activeStage === 'all' || item.stage === activeStage)
+    .filter(item => {
+      if (activeStage === 'all') return true
+      if (activeStage === 'smart') return smartStages ? smartStages.includes(item.stage) : true
+      return item.stage === activeStage
+    })
     .filter(item => activeAudience === 'all' || item.audience === activeAudience)
 
-  const filterActive = activeStage !== 'all' || activeAudience !== 'all'
+  // Dot only appears when the user has manually overridden stage or audience
+  const filterActive = activeStage !== 'smart' || activeAudience !== 'all'
 
   function clearFilters() {
     setActiveSubcategory('all')
-    setActiveStage('all')
+    setActiveStage('smart')
     setActiveAudience('all')
   }
 
