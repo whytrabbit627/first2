@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: Exercise during pregnancy is safe for most women and has real benefits — reduced back pain, better sleep, easier labour, faster recovery. Here's what's safe each trimester and what to modify.
 tags: [exercise, prenatal fitness, pregnancy, movement]
-imageUrl: https://images.unsplash.com/photo-1544126592-807ade215a0b?w=800&q=80
+imageUrl: https://images.pexels.com/photos/7055641/pexels-photo-7055641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

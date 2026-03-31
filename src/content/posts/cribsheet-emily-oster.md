@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: The follow-up to Expecting Better, applying the same data-driven lens to the first few years of parenting. Covers breastfeeding, sleep training, screen time, and more. Essential for parents who want to make thoughtful choices.
 tags: [book, evidence-based, newborn, parenting decisions, data]
-imageUrl: https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80
+imageUrl: https://images.pexels.com/photos/29614944/pexels-photo-29614944.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: A social networking app designed specifically for women navigating pregnancy, motherhood, and fertility. Find local mums at the same stage, join topic-based groups, and get peer support from people who truly understand.
 tags: [app, community, mom friends, social, local]
-imageUrl: https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=800&q=80
+imageUrl: https://images.pexels.com/photos/11280543/pexels-photo-11280543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

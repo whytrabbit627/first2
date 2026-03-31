@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: Not all prenatal vitamins are equal. This guide explains what to look for — methylfolate vs folic acid, DHA dosage, iron form — and which factors matter most depending on your diet.
 tags: [prenatal vitamins, supplements, folate, DHA]
-imageUrl: https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80
+imageUrl: https://images.pexels.com/photos/3683049/pexels-photo-3683049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

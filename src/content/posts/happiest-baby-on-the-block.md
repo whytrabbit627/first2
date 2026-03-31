@@ -7,7 +7,7 @@ stage: newborn
 audience: both
 summary: Introduces the famous "5 S's" technique for calming a crying newborn. It's the kind of practically useful content that feels like a superpower at 3am. Worth reading before baby arrives so it's already in your toolkit.
 tags: [book, soothing, newborn, crying, 5 S's]
-imageUrl: https://images.unsplash.com/photo-1593476123561-9516f2097158?w=800&q=80
+imageUrl: https://images.pexels.com/photos/10616188/pexels-photo-10616188.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

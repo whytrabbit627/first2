@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: You don't have time for a 30-minute meditation practice — we know. This guide is built around 2–5 minute techniques that work in the middle of a feed, a nappy change, or a sleepless 3am.
 tags: [mindfulness, meditation, stress, new parent, calm]
-imageUrl: https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80
+imageUrl: https://images.pexels.com/photos/32628972/pexels-photo-32628972.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

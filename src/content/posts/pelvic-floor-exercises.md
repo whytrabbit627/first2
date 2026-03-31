@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: Kegels are just the beginning. A pelvic floor physiotherapist explains how to find, train, and relax the right muscles — and why relaxation is just as important as strength.
 tags: [pelvic floor, kegels, pregnancy, postpartum, physio]
-imageUrl: https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80
+imageUrl: https://images.pexels.com/photos/374101/pexels-photo-374101.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

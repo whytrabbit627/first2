@@ -7,7 +7,7 @@ stage: pregnancy
 audience: partner
 summary: The definitive guide for partners, doulas, and anyone supporting a person through labour and birth. Partners who read this feel genuinely useful in the birth room — not just a spectator.
 tags: [book, birth, labour, partner, doula]
-imageUrl: https://images.unsplash.com/photo-1486308510493-aa64833637bc?w=800&q=80
+imageUrl: https://images.pexels.com/photos/26272303/pexels-photo-26272303.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

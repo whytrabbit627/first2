@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A C-shaped pillow that wraps around your waist to bring baby up to breast or bottle height, saving your back and arms during feeds. One of the most-used baby items in the first year.
 tags: [nursing pillow, breastfeeding, bottle feeding, support]
-imageUrl: https://images.unsplash.com/photo-1479065476818-424362c3a854?w=800&q=80
+imageUrl: https://images.pexels.com/photos/12169559/pexels-photo-12169559.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

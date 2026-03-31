@@ -7,7 +7,7 @@ stage: newborn
 audience: mom
 summary: A simple one-piece silicone pump that attaches via suction and collects letdown milk hands-free while you nurse on the other side. An effortless way to build a freezer stash.
 tags: [haakaa, manual pump, letdown, breastfeeding]
-imageUrl: https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&q=80
+imageUrl: https://images.pexels.com/photos/8015792/pexels-photo-8015792.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

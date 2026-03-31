@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: Pre-sterilised, double-sealed storage bags designed to lie flat in the freezer for space-efficient stacking. Among the most leak-proof options on the market — critical when you're storing liquid gold.
 tags: [milk storage, pumping, freezer stash, breastfeeding]
-imageUrl: https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?w=800&q=80
+imageUrl: https://images.pexels.com/photos/21071800/pexels-photo-21071800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

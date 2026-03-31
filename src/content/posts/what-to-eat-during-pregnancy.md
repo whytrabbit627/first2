@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: A practical breakdown of what nutrients matter most each trimester, which foods to prioritise, and which to avoid — without making eating feel like a chore.
 tags: [food, diet, pregnancy nutrition, first trimester]
-imageUrl: https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80
+imageUrl: https://images.pexels.com/photos/6991894/pexels-photo-6991894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

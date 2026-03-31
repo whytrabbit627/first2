@@ -7,7 +7,7 @@ stage: newborn
 audience: both
 summary: A beautiful guide to the postpartum period rooted in ancient Chinese traditions, focusing on rest, nourishment, and community. A philosophy that stands in stark contrast to the Western expectation of bouncing back immediately.
 tags: [book, postpartum, recovery, fourth trimester, nutrition]
-imageUrl: https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80
+imageUrl: https://images.pexels.com/photos/36288592/pexels-photo-36288592.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

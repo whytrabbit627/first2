@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: An app-controlled sound machine and night light that grows with your child. Set sleep schedules, control it remotely when baby stirs, and use the soft glow for nighttime feeds without fully waking anyone up.
 tags: [sound machine, white noise, sleep, night light]
-imageUrl: https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&q=80
+imageUrl: https://images.pexels.com/photos/6514239/pexels-photo-6514239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

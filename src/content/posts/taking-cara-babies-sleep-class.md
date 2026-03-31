@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: One of the most popular online newborn sleep courses. Cara's approach is warm, realistic, and not prescriptive — she teaches you to read your baby's cues and survive the fourth trimester. Highly recommended by paediatric nurses.
 tags: [class, sleep, newborn, schedule, online course]
-imageUrl: https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=800&q=80
+imageUrl: https://images.pexels.com/photos/19532665/pexels-photo-19532665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

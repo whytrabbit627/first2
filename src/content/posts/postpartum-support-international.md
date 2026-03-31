@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: The go-to organisation for postpartum mental health. Their helpline connects you with a trained volunteer who can listen and help you find local professional support. Resources for partners too.
 tags: [PPD, postpartum depression, anxiety, support, helpline]
-imageUrl: https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=800&q=80
+imageUrl: https://images.pexels.com/photos/8560002/pexels-photo-8560002.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

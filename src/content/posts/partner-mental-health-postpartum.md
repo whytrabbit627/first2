@@ -7,7 +7,7 @@ stage: first-year
 audience: partner
 summary: Up to 1 in 10 new fathers experience depression or anxiety in the postpartum period. This honest resource explains what to look for in yourself, why it happens, and where to get help.
 tags: [partner, paternal depression, mental health, support, fourth trimester]
-imageUrl: https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80
+imageUrl: https://images.pexels.com/photos/2133/man-person-cute-young.jpg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

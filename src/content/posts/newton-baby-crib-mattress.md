@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A 100% breathable crib mattress that meets safe sleep guidelines. The unique Wovenaire core allows air to flow freely, and the machine-washable cover is a huge bonus in the newborn phase.
 tags: [crib mattress, breathable, safe sleep, registry]
-imageUrl: https://images.unsplash.com/photo-1545156521-77bd85671d30?w=800&q=80
+imageUrl: https://images.pexels.com/photos/7491094/pexels-photo-7491094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

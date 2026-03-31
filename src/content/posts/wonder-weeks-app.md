@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Based on decades of research, The Wonder Weeks maps your baby's predictable developmental leaps. Knowing a leap is coming makes it so much easier to ride out the fussiness and disrupted sleep with patience.
 tags: [app, developmental leaps, fussy periods, milestones, brain development]
-imageUrl: https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80
+imageUrl: https://images.pexels.com/photos/6709828/pexels-photo-6709828.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

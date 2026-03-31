@@ -7,7 +7,7 @@ stage: newborn
 audience: both
 summary: The SNOO responds to your baby's cries with gentle rocking and white noise, automatically escalating until baby settles. Expensive, but many parents call it the single best purchase they made.
 tags: [bassinet, sleep, soothing, registry]
-imageUrl: https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=800&q=80
+imageUrl: https://images.pexels.com/photos/13071794/pexels-photo-13071794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

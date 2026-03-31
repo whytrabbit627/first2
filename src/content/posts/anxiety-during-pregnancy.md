@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: Some worry during pregnancy is normal and even adaptive. But for many, it crosses a line into anxiety that affects daily life. This piece helps you understand the difference and practical ways to manage it.
 tags: [anxiety, pregnancy, mental health, worry, perinatal]
-imageUrl: https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80
+imageUrl: https://images.pexels.com/photos/7155367/pexels-photo-7155367.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

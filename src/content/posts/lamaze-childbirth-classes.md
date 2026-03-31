@@ -7,7 +7,7 @@ stage: pregnancy
 audience: both
 summary: Lamaze classes go well beyond breathing techniques. Modern Lamaze covers all stages of labour, pain management options, and how to advocate effectively in the birth setting. Use their class finder to locate a certified educator near you.
 tags: [class, childbirth, labour, birth preparation, breathing]
-imageUrl: https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80
+imageUrl: https://images.pexels.com/photos/7991783/pexels-photo-7991783.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

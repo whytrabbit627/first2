@@ -7,7 +7,7 @@ stage: pregnancy
 audience: mom
 summary: Prenatal yoga reduces back pain, improves sleep, and builds breathing techniques useful during labour. This explainer covers what happens in a typical class and how to find a qualified teacher.
 tags: [yoga, prenatal, flexibility, breathing, community]
-imageUrl: https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=800&q=80
+imageUrl: https://images.pexels.com/photos/7055643/pexels-photo-7055643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

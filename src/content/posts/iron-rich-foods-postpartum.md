@@ -7,7 +7,7 @@ stage: first-year
 audience: mom
 summary: Blood loss during birth depletes iron, contributing to the postpartum fatigue that hits so many new mothers hard. Here's how to replenish through food and when supplementation makes sense.
 tags: [iron, postpartum, nutrition, fatigue, anaemia]
-imageUrl: https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80
+imageUrl: https://images.pexels.com/photos/27643033/pexels-photo-27643033.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

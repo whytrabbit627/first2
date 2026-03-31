@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Tracks feeds, sleep, and nappy changes and uses the data to generate a personalised SweetSpot nap prediction. Widely considered the best sleep-tracking app for infants.
 tags: [app, sleep tracker, schedule, nap, SweetSpot]
-imageUrl: https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80
+imageUrl: https://images.pexels.com/photos/7470685/pexels-photo-7470685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24

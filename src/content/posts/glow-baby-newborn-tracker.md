@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A clean, well-designed tracker for the newborn phase — log feeds, nappy changes, sleep, and pumping sessions. Partner-friendly with shared account access so both parents stay on the same page.
 tags: [app, newborn tracker, feeds, nappies, milestones]
-imageUrl: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80
+imageUrl: https://images.pexels.com/photos/6849268/pexels-photo-6849268.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-24
