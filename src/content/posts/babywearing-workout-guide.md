@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Babywearing workouts let you stay active while keeping your baby close and content. Here's how to do it safely, what moves work best, and when to use a carrier for exercise.
 tags: [babywearing, fitness, postpartum exercise, carrier workout, walking]
-imageUrl: https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80
+imageUrl: https://images.pexels.com/photos/14590456/pexels-photo-14590456.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-25

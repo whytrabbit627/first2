@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Ready to start solids around 6 months? Here's how to choose between baby-led weaning and puréed foods — or combine both — safely and confidently.
 tags: [solid foods, baby-led weaning, purées, 6 months, nutrition, feeding]
-imageUrl: https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80
+imageUrl: https://images.pexels.com/photos/4409245/pexels-photo-4409245.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-25

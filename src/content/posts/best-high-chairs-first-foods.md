@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: A high chair is one of the most-used pieces of baby gear from 6 months through toddlerhood. Here's what to look for and four well-regarded options across different budgets.
 tags: [high chair, solid foods, gear, 6 months, feeding, baby-led weaning]
-imageUrl: https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80
+imageUrl: https://images.pexels.com/photos/4409276/pexels-photo-4409276.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-25

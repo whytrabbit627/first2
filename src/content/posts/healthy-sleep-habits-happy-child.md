@@ -7,7 +7,7 @@ stage: first-year
 audience: both
 summary: Dr. Weissbluth's comprehensive guide to children's sleep covers newborn through school age, with practical advice on schedules, nap transitions, and gentle sleep training from 4–6 months.
 tags: [sleep training, baby sleep, books, schedules, nap, 4 months, 6 months]
-imageUrl: https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=800&q=80
+imageUrl: https://images.pexels.com/photos/10998327/pexels-photo-10998327.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 affiliateUrl: ""
 affiliateLabel: ""
 publishedAt: 2026-03-25
