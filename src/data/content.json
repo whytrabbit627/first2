@@ -4,10 +4,15 @@
     "title": "SNOO Smart Sleeper Bassinet",
     "category": "items",
     "subcategory": "Sleep",
-    "tags": ["bassinet", "sleep", "soothing", "registry"],
+    "tags": [
+      "bassinet",
+      "sleep",
+      "soothing",
+      "registry"
+    ],
     "description": "The SNOO responds to your baby's cries with gentle rocking and white noise, automatically escalating until baby settles. It's expensive but many parents call it the single best purchase they made. Has a rental program if you don't want to commit to buying.",
     "link": "https://www.happiestbaby.com/products/snoo-smart-bassinet",
-    "imageUrl": "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/13071794/pexels-photo-13071794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -16,10 +21,15 @@
     "title": "Hatch Rest+ Baby Sound Machine & Night Light",
     "category": "items",
     "subcategory": "Sleep",
-    "tags": ["sound machine", "white noise", "sleep", "night light"],
+    "tags": [
+      "sound machine",
+      "white noise",
+      "sleep",
+      "night light"
+    ],
     "description": "An app-controlled sound machine and night light that grows with your child. Set sleep schedules, control it remotely when baby stirs, and use the soft glow for nighttime feeds without fully waking anyone up. A genuine sleep-routine game changer.",
     "link": "https://www.hatch.co/rest",
-    "imageUrl": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6514239/pexels-photo-6514239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -28,10 +38,15 @@
     "title": "Newton Baby Crib Mattress",
     "category": "items",
     "subcategory": "Sleep",
-    "tags": ["crib mattress", "breathable", "safe sleep", "registry"],
+    "tags": [
+      "crib mattress",
+      "breathable",
+      "safe sleep",
+      "registry"
+    ],
     "description": "A 100% breathable crib mattress that meets safe sleep guidelines. The unique Wovenaire core allows air to flow freely — babies can even breathe through it face-down. Machine washable cover is a huge bonus in the newborn phase.",
     "link": "https://newtonbaby.com/products/essential-crib-mattress",
-    "imageUrl": "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7491094/pexels-photo-7491094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -40,10 +55,15 @@
     "title": "Nested Bean Zen Sack",
     "category": "items",
     "subcategory": "Sleep",
-    "tags": ["sleep sack", "swaddle", "newborn", "wearable blanket"],
+    "tags": [
+      "sleep sack",
+      "swaddle",
+      "newborn",
+      "wearable blanket"
+    ],
     "description": "A gently weighted sleep sack that mimics the feeling of a parent's touch. The small weight on the chest helps babies feel held and secure without you actually holding them — a thoughtful design that helps with the 'set down without waking' problem.",
     "link": "https://www.nestedbean.com/collections/zen-sack",
-    "imageUrl": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/20646540/pexels-photo-20646540.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -52,10 +72,15 @@
     "title": "Owlet Dream Sock Baby Monitor",
     "category": "items",
     "subcategory": "Sleep",
-    "tags": ["monitor", "oxygen", "heart rate", "peace of mind"],
+    "tags": [
+      "monitor",
+      "oxygen",
+      "heart rate",
+      "peace of mind"
+    ],
     "description": "A smart sock that tracks your baby's oxygen levels and heart rate while they sleep, sending alerts to your phone if readings go outside normal ranges. Controversial among some paediatricians but beloved by anxious parents — particularly useful for preemies or those with health concerns.",
     "link": "https://owletcare.com/products/owlet-dream-sock",
-    "imageUrl": "https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/669151/pexels-photo-669151.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -64,10 +89,15 @@
     "title": "Spectra S2 Electric Breast Pump",
     "category": "items",
     "subcategory": "Feeding",
-    "tags": ["breast pump", "pumping", "breastfeeding", "registry"],
+    "tags": [
+      "breast pump",
+      "pumping",
+      "breastfeeding",
+      "registry"
+    ],
     "description": "Widely considered the gold standard in electric breast pumps. Quiet, comfortable, and highly adjustable — you can fine-tune both suction and cycle speed to find what works for your body. Often covered by insurance in the US, so check your plan before buying.",
     "link": "https://www.spectra-baby.com/spectra-s2-plus/",
-    "imageUrl": "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/33402739/pexels-photo-33402739.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "newborn"
   },
@@ -76,10 +106,15 @@
     "title": "Boppy Original Nursing Pillow",
     "category": "items",
     "subcategory": "Feeding",
-    "tags": ["nursing pillow", "breastfeeding", "bottle feeding", "support"],
+    "tags": [
+      "nursing pillow",
+      "breastfeeding",
+      "bottle feeding",
+      "support"
+    ],
     "description": "A C-shaped pillow that wraps around your waist to bring baby up to breast or bottle height, saving your back and arms from feed-induced strain. Doubles as a tummy time prop and sitting support as baby grows. One of the most-used baby items in the first year.",
     "link": "https://www.boppy.com/products/boppy-original-newborn-lounger",
-    "imageUrl": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/12169559/pexels-photo-12169559.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -88,10 +123,15 @@
     "title": "Haakaa Silicone Breast Pump",
     "category": "items",
     "subcategory": "Feeding",
-    "tags": ["haakaa", "manual pump", "letdown", "breastfeeding"],
+    "tags": [
+      "haakaa",
+      "manual pump",
+      "letdown",
+      "breastfeeding"
+    ],
     "description": "A simple one-piece silicone pump that attaches to your breast via suction and collects letdown milk hands-free while you nurse on the other side. Incredibly simple, easy to clean, and costs a fraction of an electric pump. A great way to build a freezer stash effortlessly.",
     "link": "https://www.amazon.com/Haakaa-Silicone-Breastfeeding-Manual-Breast/dp/B07D3QJGMZ",
-    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/8015792/pexels-photo-8015792.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "newborn"
   },
@@ -100,10 +140,15 @@
     "title": "Dr. Brown's Natural Flow Bottles",
     "category": "items",
     "subcategory": "Feeding",
-    "tags": ["bottles", "anti-colic", "feeding", "registry"],
+    "tags": [
+      "bottles",
+      "anti-colic",
+      "feeding",
+      "registry"
+    ],
     "description": "Anti-colic bottles with an internal vent system that reduces air ingestion, helping to minimise gas and reflux. A go-to recommendation from paediatric nurses. The extra parts mean slightly more washing-up, but the reduction in gassy, uncomfortable babies is worth it for most families.",
     "link": "https://www.drbrownsbaby.com/bottles/",
-    "imageUrl": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/33508363/pexels-photo-33508363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -112,10 +157,15 @@
     "title": "Lansinoh Breast Milk Storage Bags",
     "category": "items",
     "subcategory": "Feeding",
-    "tags": ["milk storage", "pumping", "freezer stash", "breastfeeding"],
+    "tags": [
+      "milk storage",
+      "pumping",
+      "freezer stash",
+      "breastfeeding"
+    ],
     "description": "Pre-sterilised, double-sealed storage bags designed to lie flat in the freezer for space-efficient stacking. Each bag has a date/volume label. Among the most leak-proof options on the market — critical when your liquid gold is going in the freezer for weeks.",
     "link": "https://www.lansinoh.com/products/breastmilk-storage-bags",
-    "imageUrl": "https://images.unsplash.com/photo-1631467245427-2f4fa1d89b14?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/21071800/pexels-photo-21071800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "newborn"
   },
@@ -124,10 +174,15 @@
     "title": "UPPAbaby VISTA V2 Stroller",
     "category": "items",
     "subcategory": "Gear",
-    "tags": ["stroller", "pram", "travel system", "registry"],
+    "tags": [
+      "stroller",
+      "pram",
+      "travel system",
+      "registry"
+    ],
     "description": "A full-featured stroller that grows from single to double as your family expands, with a reversible seat so baby can face you or the world. Compatible with most infant car seat brands. It's a serious investment but holds its resale value extremely well.",
     "link": "https://uppababy.com/strollers/vista/",
-    "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/11911648/pexels-photo-11911648.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "pregnancy"
   },
@@ -136,10 +191,15 @@
     "title": "Ergobaby Omni 360 Baby Carrier",
     "category": "items",
     "subcategory": "Gear",
-    "tags": ["carrier", "babywearing", "newborn", "hands-free"],
+    "tags": [
+      "carrier",
+      "babywearing",
+      "newborn",
+      "hands-free"
+    ],
     "description": "A versatile soft-structured carrier that works from newborn through toddlerhood in four carry positions — front-facing in, front-facing out, hip, and back. No infant insert needed. Babywearing keeps baby calm and frees your hands; this is one of the most comfortable all-day carriers available.",
     "link": "https://ergobaby.com/baby-carrier/omni-360/",
-    "imageUrl": "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6849353/pexels-photo-6849353.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -148,10 +208,15 @@
     "title": "Chicco KeyFit 35 Infant Car Seat",
     "category": "items",
     "subcategory": "Gear",
-    "tags": ["car seat", "infant seat", "travel system", "safety"],
+    "tags": [
+      "car seat",
+      "infant seat",
+      "travel system",
+      "safety"
+    ],
     "description": "Consistently top-rated by safety organisations, the KeyFit 35 is known for its easy, correct installation and comfortable fit for newborns. The one-second LATCH attachment and built-in level indicator make it genuinely foolproof. A safe, practical choice without the premium price tag.",
     "link": "https://www.chiccousa.com/car-seats/infant-car-seats/keyfit-35/",
-    "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6583538/pexels-photo-6583538.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "pregnancy"
   },
@@ -160,10 +225,15 @@
     "title": "Skip Hop Forma Diaper Bag Backpack",
     "category": "items",
     "subcategory": "Gear",
-    "tags": ["diaper bag", "backpack", "changing", "organisation"],
+    "tags": [
+      "diaper bag",
+      "backpack",
+      "changing",
+      "organisation"
+    ],
     "description": "A diaper bag that doesn't look like one. Fits a laptop alongside all your baby gear, has a wipes pocket accessible with one hand, includes a changing mat, and distributes weight evenly when worn as a backpack. Great for partners who want something that doesn't feel overly 'baby-branded'.",
     "link": "https://www.skiphop.com/products/forma-backpack-diaper-bag",
-    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7491332/pexels-photo-7491332.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "pregnancy"
   },
@@ -172,10 +242,15 @@
     "title": "4moms mamaRoo 4 Baby Swing",
     "category": "items",
     "subcategory": "Gear",
-    "tags": ["swing", "soothing", "bouncer", "newborn"],
+    "tags": [
+      "swing",
+      "soothing",
+      "bouncer",
+      "newborn"
+    ],
     "description": "Mimics the natural motions parents use to soothe babies — car ride, wave, tree swing — in five different speeds. App-controlled so you can adjust without disturbing a sleeping baby. Many newborns who resist other swings take to the mamaRoo's unique movement patterns.",
     "link": "https://www.4moms.com/mamaroo-4-baby-swing",
-    "imageUrl": "https://images.unsplash.com/photo-1566004100477-7b3d6e801e52?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6849262/pexels-photo-6849262.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -184,10 +259,15 @@
     "title": "What to Eat During Pregnancy: A Trimester-by-Trimester Guide",
     "category": "health",
     "subcategory": "Nutrition",
-    "tags": ["food", "diet", "pregnancy nutrition", "first trimester"],
+    "tags": [
+      "food",
+      "diet",
+      "pregnancy nutrition",
+      "first trimester"
+    ],
     "description": "A practical breakdown of what nutrients matter most each trimester, which foods to prioritise, and which to avoid — without making eating feel like a chore. Written by a registered dietitian and grounded in current evidence, not fear.",
     "link": "https://www.whattoexpect.com/pregnancy/eating-well/",
-    "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6991894/pexels-photo-6991894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -196,10 +276,15 @@
     "title": "How to Choose a Prenatal Vitamin",
     "category": "health",
     "subcategory": "Nutrition",
-    "tags": ["prenatal vitamins", "supplements", "folate", "DHA"],
+    "tags": [
+      "prenatal vitamins",
+      "supplements",
+      "folate",
+      "DHA"
+    ],
     "description": "Not all prenatal vitamins are equal. This guide explains what to look for — methylfolate vs folic acid, DHA dosage, iron form — and which factors matter most depending on your diet. Includes a comparison of popular brands and what your OB or midwife is likely to recommend.",
     "link": "https://evidencebasedbirth.com/prenatal-vitamins/",
-    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951b55104?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/3683049/pexels-photo-3683049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -208,10 +293,15 @@
     "title": "Nutrition for Breastfeeding: What Actually Matters",
     "category": "health",
     "subcategory": "Nutrition",
-    "tags": ["breastfeeding", "nutrition", "postpartum", "diet"],
+    "tags": [
+      "breastfeeding",
+      "nutrition",
+      "postpartum",
+      "diet"
+    ],
     "description": "The good news: your milk quality is remarkably resilient regardless of what you eat. This evidence-based article explains what really matters nutritionally while nursing (calories, hydration, vitamin D), and cuts through the noise about 'milk-supply foods' and things to avoid.",
     "link": "https://kellymom.com/nutrition/mothers-diet/mom-diet/",
-    "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/34618719/pexels-photo-34618719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "newborn"
   },
@@ -220,10 +310,16 @@
     "title": "Iron-Rich Foods for Postpartum Recovery",
     "category": "health",
     "subcategory": "Nutrition",
-    "tags": ["iron", "postpartum", "nutrition", "fatigue", "anaemia"],
+    "tags": [
+      "iron",
+      "postpartum",
+      "nutrition",
+      "fatigue",
+      "anaemia"
+    ],
     "description": "Blood loss during birth depletes iron, contributing to the postpartum fatigue that hits so many new mothers hard. This guide walks through dietary sources of iron (haem and non-haem), what to pair them with for better absorption, and when supplementation makes sense.",
     "link": "https://www.babycenter.com/baby/postpartum-health/iron-rich-foods-for-new-moms_10314385",
-    "imageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/27643033/pexels-photo-27643033.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "newborn"
   },
@@ -232,10 +328,15 @@
     "title": "Eating for Partners: Supporting a Healthy Pregnancy from Your Side",
     "category": "health",
     "subcategory": "Nutrition",
-    "tags": ["partner", "nutrition", "fertility", "support"],
+    "tags": [
+      "partner",
+      "nutrition",
+      "fertility",
+      "support"
+    ],
     "description": "Diet matters for partners too — sperm health, stress resilience, and being a genuine support through pregnancy are all influenced by what you eat. A practical, non-preachy guide to the nutrients that matter and easy ways to make improvements without overhauling your lifestyle.",
     "link": "https://www.daddyborn.com/nutrition-for-expectant-fathers",
-    "imageUrl": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7488982/pexels-photo-7488982.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "partner",
     "stage": "pregnancy"
   },
@@ -244,10 +345,16 @@
     "title": "Postpartum Support International (PSI)",
     "category": "health",
     "subcategory": "Mental Health",
-    "tags": ["PPD", "postpartum depression", "anxiety", "support", "helpline"],
+    "tags": [
+      "PPD",
+      "postpartum depression",
+      "anxiety",
+      "support",
+      "helpline"
+    ],
     "description": "The go-to organisation for postpartum mental health. Their helpline (1-800-944-4773) connects you with a trained volunteer who can listen and help you find local professional support. Their website includes a provider directory, online support groups, and resources for partners too.",
     "link": "https://www.postpartum.net",
-    "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/8560002/pexels-photo-8560002.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -256,10 +363,16 @@
     "title": "Recognising Postpartum Depression vs. Baby Blues",
     "category": "health",
     "subcategory": "Mental Health",
-    "tags": ["PPD", "baby blues", "mental health", "postpartum", "symptoms"],
+    "tags": [
+      "PPD",
+      "baby blues",
+      "mental health",
+      "postpartum",
+      "symptoms"
+    ],
     "description": "Baby blues affect up to 80% of new mothers and typically resolve within two weeks. PPD is different — more persistent, more intense, and very treatable. This article explains the key differences, what symptoms to watch for in yourself and your partner, and when to reach out for help.",
     "link": "https://www.acog.org/womens-health/faqs/postpartum-depression",
-    "imageUrl": "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6624312/pexels-photo-6624312.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -268,10 +381,16 @@
     "title": "Anxiety During Pregnancy: What's Normal and What's Not",
     "category": "health",
     "subcategory": "Mental Health",
-    "tags": ["anxiety", "pregnancy", "mental health", "worry", "perinatal"],
+    "tags": [
+      "anxiety",
+      "pregnancy",
+      "mental health",
+      "worry",
+      "perinatal"
+    ],
     "description": "Some worry during pregnancy is normal and even adaptive. But for many, it crosses a line into anxiety that affects daily life. This piece helps you understand the difference, describes practical coping strategies, and makes the case for talking to your provider without shame.",
     "link": "https://www.marcesociety.com/resources/anxiety-during-pregnancy/",
-    "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7155367/pexels-photo-7155367.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -280,10 +399,16 @@
     "title": "Partner Mental Health: The Fourth Trimester Hits You Too",
     "category": "health",
     "subcategory": "Mental Health",
-    "tags": ["partner", "paternal depression", "mental health", "support", "fourth trimester"],
+    "tags": [
+      "partner",
+      "paternal depression",
+      "mental health",
+      "support",
+      "fourth trimester"
+    ],
     "description": "Up to 1 in 10 new fathers experience depression or anxiety in the postpartum period — a figure that rises when their partner is also struggling. This honest, non-stigmatising resource explains what to look for in yourself, why it happens, and where to get help.",
     "link": "https://www.postpartum.net/get-help/help-for-dads/",
-    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/2133/man-person-cute-young.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "partner",
     "stage": "newborn"
   },
@@ -292,10 +417,16 @@
     "title": "Mindfulness for New Parents: Starting Small",
     "category": "health",
     "subcategory": "Mental Health",
-    "tags": ["mindfulness", "meditation", "stress", "new parent", "calm"],
+    "tags": [
+      "mindfulness",
+      "meditation",
+      "stress",
+      "new parent",
+      "calm"
+    ],
     "description": "You don't have time for a 30-minute meditation practice — we know. This guide is built around 2-5 minute techniques that work in the middle of a feed, a nappy change, or a sleepless 3am. Small consistent doses of mindfulness measurably reduce new parent stress.",
     "link": "https://www.headspace.com/mindfulness/mindfulness-for-parents",
-    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/32628972/pexels-photo-32628972.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -304,10 +435,15 @@
     "title": "Safe Exercise During Pregnancy: Trimester by Trimester",
     "category": "health",
     "subcategory": "Fitness",
-    "tags": ["exercise", "prenatal fitness", "pregnancy", "movement"],
+    "tags": [
+      "exercise",
+      "prenatal fitness",
+      "pregnancy",
+      "movement"
+    ],
     "description": "Exercise during pregnancy is safe for most women and has real benefits — reduced back pain, better sleep, easier labour, faster recovery. This evidence-based guide covers what's safe each trimester, what to modify, and clear red flags that mean you should stop and call your provider.",
     "link": "https://evidencebasedbirth.com/exercise-during-pregnancy/",
-    "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7055641/pexels-photo-7055641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -316,10 +452,16 @@
     "title": "Pelvic Floor Exercises: The Complete Guide for Pregnancy and Beyond",
     "category": "health",
     "subcategory": "Fitness",
-    "tags": ["pelvic floor", "kegels", "pregnancy", "postpartum", "physio"],
+    "tags": [
+      "pelvic floor",
+      "kegels",
+      "pregnancy",
+      "postpartum",
+      "physio"
+    ],
     "description": "Kegels are just the beginning. A strong, coordinated pelvic floor matters enormously during pregnancy, birth, and recovery. This guide — written by a pelvic floor physiotherapist — explains how to find, train, and relax the right muscles, and why relaxation is just as important as strength.",
     "link": "https://www.pelvicguru.com/blog/pelvic-floor-exercises-pregnancy",
-    "imageUrl": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/374101/pexels-photo-374101.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -328,10 +470,15 @@
     "title": "Returning to Exercise After Birth: What No One Tells You",
     "category": "health",
     "subcategory": "Fitness",
-    "tags": ["postpartum fitness", "recovery", "diastasis recti", "return to exercise"],
+    "tags": [
+      "postpartum fitness",
+      "recovery",
+      "diastasis recti",
+      "return to exercise"
+    ],
     "description": "The traditional '6-week clearance' is not a green light to return to everything. This guide explains the stages of postpartum recovery, how to check for diastasis recti, and a progressive approach to returning to activity — from gentle walks to higher-impact exercise — without setting back your healing.",
     "link": "https://www.mumsfit.com/returning-to-exercise-after-birth",
-    "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/1007788/pexels-photo-1007788.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "newborn"
   },
@@ -340,10 +487,16 @@
     "title": "Prenatal Yoga: What to Expect in Your First Class",
     "category": "health",
     "subcategory": "Fitness",
-    "tags": ["yoga", "prenatal", "flexibility", "breathing", "community"],
+    "tags": [
+      "yoga",
+      "prenatal",
+      "flexibility",
+      "breathing",
+      "community"
+    ],
     "description": "Prenatal yoga is one of the best-evidenced forms of exercise in pregnancy — it reduces back pain, improves sleep, and builds the breathing techniques useful during labour. This explainer covers what happens in a typical class, what to tell your instructor, and how to find a qualified teacher.",
     "link": "https://www.yogajournal.com/poses/types/prenatal/",
-    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7055643/pexels-photo-7055643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -352,10 +505,16 @@
     "title": "Active Dads: Staying Fit While Supporting Your Partner",
     "category": "health",
     "subcategory": "Fitness",
-    "tags": ["partner", "fitness", "wellbeing", "active", "stress relief"],
+    "tags": [
+      "partner",
+      "fitness",
+      "wellbeing",
+      "active",
+      "stress relief"
+    ],
     "description": "Exercise is one of the most effective stress-management tools available to partners navigating pregnancy and new parenthood — but it often gets deprioritised. This guide helps you maintain a realistic routine without guilt, including ways to stay active together as a couple when your partner is up for it.",
     "link": "https://www.daddyborn.com/fitness-for-expectant-fathers",
-    "imageUrl": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/14140721/pexels-photo-14140721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "partner",
     "stage": "pregnancy"
   },
@@ -364,10 +523,16 @@
     "title": "Expecting Better — Emily Oster",
     "category": "resources",
     "subcategory": "Books",
-    "tags": ["book", "evidence-based", "pregnancy", "data", "risk"],
+    "tags": [
+      "book",
+      "evidence-based",
+      "pregnancy",
+      "data",
+      "risk"
+    ],
     "description": "An economist applies rigorous data analysis to the standard advice given to pregnant women — and finds a lot of it doesn't hold up. A genuinely empowering read that helps you understand the actual risk levels behind common recommendations and make informed decisions, not fear-based ones.",
     "link": "https://www.penguinrandomhouse.com/books/312801/expecting-better-by-emily-oster/",
-    "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/32046501/pexels-photo-32046501.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "pregnancy"
   },
@@ -376,10 +541,16 @@
     "title": "The First 40 Days — Heng Ou",
     "category": "resources",
     "subcategory": "Books",
-    "tags": ["book", "postpartum", "recovery", "fourth trimester", "nutrition"],
+    "tags": [
+      "book",
+      "postpartum",
+      "recovery",
+      "fourth trimester",
+      "nutrition"
+    ],
     "description": "A beautiful, practical guide to the postpartum period rooted in ancient Chinese 'sitting the month' traditions. Focuses on rest, nourishment, and community support — a philosophy that stands in stark contrast to the Western expectation of bouncing back immediately. Includes dozens of warming, healing recipes.",
     "link": "https://www.abramsbooks.com/product/first-40-days_9781617691836/",
-    "imageUrl": "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/36288592/pexels-photo-36288592.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -388,10 +559,16 @@
     "title": "Cribsheet — Emily Oster",
     "category": "resources",
     "subcategory": "Books",
-    "tags": ["book", "evidence-based", "newborn", "parenting decisions", "data"],
+    "tags": [
+      "book",
+      "evidence-based",
+      "newborn",
+      "parenting decisions",
+      "data"
+    ],
     "description": "The follow-up to Expecting Better, applying the same data-driven lens to the first few years of parenting. Covers breastfeeding, sleep training, screen time, childcare decisions, and more. Essential for parents who want to make thoughtful choices without getting paralysed by conflicting advice.",
     "link": "https://www.penguinrandomhouse.com/books/563671/cribsheet-by-emily-oster/",
-    "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/29614944/pexels-photo-29614944.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -400,10 +577,16 @@
     "title": "The Happiest Baby on the Block — Harvey Karp",
     "category": "resources",
     "subcategory": "Books",
-    "tags": ["book", "soothing", "newborn", "crying", "5 S's"],
+    "tags": [
+      "book",
+      "soothing",
+      "newborn",
+      "crying",
+      "5 S's"
+    ],
     "description": "Introduces the famous '5 S's' technique (swaddle, side/stomach position, shush, swing, suck) for calming a crying newborn. It's the kind of practical, immediately usable content that feels like a superpower at 3am. Worth reading before baby arrives so it's already in your toolkit.",
     "link": "https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-a-baby",
-    "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/10616188/pexels-photo-10616188.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -412,10 +595,16 @@
     "title": "The Birth Partner — Penny Simkin",
     "category": "resources",
     "subcategory": "Books",
-    "tags": ["book", "birth", "labour", "partner", "doula"],
+    "tags": [
+      "book",
+      "birth",
+      "labour",
+      "partner",
+      "doula"
+    ],
     "description": "The definitive guide for partners, doulas, and anyone supporting a person through labour and birth. Covers every stage of labour, pain management options, and how to advocate effectively in a hospital or birthing centre setting. Partners who read this feel genuinely useful in the birth room — not just a spectator.",
     "link": "https://pennysimkin.com/the-birth-partner/",
-    "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/26272303/pexels-photo-26272303.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "partner",
     "stage": "pregnancy"
   },
@@ -424,10 +613,16 @@
     "title": "Ovia Pregnancy Tracker",
     "category": "resources",
     "subcategory": "Apps",
-    "tags": ["app", "pregnancy tracker", "symptoms", "milestones", "weekly updates"],
+    "tags": [
+      "app",
+      "pregnancy tracker",
+      "symptoms",
+      "milestones",
+      "weekly updates"
+    ],
     "description": "A beautifully designed pregnancy tracker with personalised weekly updates, symptom logging, kick tracking, and appointment reminders. The health insights are medically reviewed and it integrates with your health records in some regions. Less cluttered than What to Expect's app, and more data-focused.",
     "link": "https://www.oviahealth.com/pregnancy",
-    "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6473738/pexels-photo-6473738.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -436,10 +631,16 @@
     "title": "Huckleberry — Baby & Toddler Sleep Tracker",
     "category": "resources",
     "subcategory": "Apps",
-    "tags": ["app", "sleep tracker", "schedule", "nap", "SweetSpot"],
+    "tags": [
+      "app",
+      "sleep tracker",
+      "schedule",
+      "nap",
+      "SweetSpot"
+    ],
     "description": "Tracks feeds, sleep, and nappy changes and uses the data to generate a personalised SweetSpot nap prediction — telling you the optimal window to put baby down before they get overtired. Paid plans include access to certified sleep consultants. Widely considered the best sleep-tracking app for infants.",
     "link": "https://huckleberrycare.com",
-    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7470685/pexels-photo-7470685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -448,10 +649,16 @@
     "title": "The Wonder Weeks App",
     "category": "resources",
     "subcategory": "Apps",
-    "tags": ["app", "developmental leaps", "fussy periods", "milestones", "brain development"],
+    "tags": [
+      "app",
+      "developmental leaps",
+      "fussy periods",
+      "milestones",
+      "brain development"
+    ],
     "description": "Based on decades of research, The Wonder Weeks maps your baby's predictable developmental leaps — periods of intense brain growth that often coincide with fussiness, clinginess, and sleep disruption. Knowing a leap is coming makes it so much easier to ride it out with patience.",
     "link": "https://www.thewonderweeks.com",
-    "imageUrl": "https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6709828/pexels-photo-6709828.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -460,10 +667,16 @@
     "title": "Peanut — Meet Your Mom Tribe",
     "category": "resources",
     "subcategory": "Apps",
-    "tags": ["app", "community", "mom friends", "social", "local"],
+    "tags": [
+      "app",
+      "community",
+      "mom friends",
+      "social",
+      "local"
+    ],
     "description": "A social networking app designed specifically for women navigating pregnancy, motherhood, and fertility. Find local mums at the same stage, join topic-based groups, and get peer support from people who genuinely get what you're going through. Particularly valuable for mothers who've relocated or feel isolated.",
     "link": "https://www.peanut-app.io",
-    "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/11280543/pexels-photo-11280543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -472,10 +685,16 @@
     "title": "Glow Baby — Newborn Tracker",
     "category": "resources",
     "subcategory": "Apps",
-    "tags": ["app", "newborn tracker", "feeds", "nappies", "milestones"],
+    "tags": [
+      "app",
+      "newborn tracker",
+      "feeds",
+      "nappies",
+      "milestones"
+    ],
     "description": "A clean, well-designed tracker for the newborn phase — log feeds (breast, bottle, or both), nappy changes, sleep, and pumping sessions. Partner-friendly with shared account access so both parents stay on the same page. Includes milestone tracking and growth charts.",
     "link": "https://glowing.com/glow-baby",
-    "imageUrl": "https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/6849268/pexels-photo-6849268.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -484,10 +703,16 @@
     "title": "Taking Cara Babies — Newborn Sleep Class",
     "category": "resources",
     "subcategory": "Classes",
-    "tags": ["class", "sleep", "newborn", "schedule", "online course"],
+    "tags": [
+      "class",
+      "sleep",
+      "newborn",
+      "schedule",
+      "online course"
+    ],
     "description": "One of the most popular online newborn sleep courses. Cara's approach is warm, realistic, and not prescriptive — she teaches you to read your baby's cues, establish a loose routine, and survive the fourth trimester without committing to any one 'method'. Highly recommended by paediatric nurses.",
     "link": "https://takingcarababies.com/newborn-class/",
-    "imageUrl": "https://images.unsplash.com/photo-1504151932400-72d4384f04b3?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/19532665/pexels-photo-19532665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   },
@@ -496,10 +721,16 @@
     "title": "Infant CPR & First Aid — American Red Cross",
     "category": "resources",
     "subcategory": "Classes",
-    "tags": ["class", "CPR", "first aid", "safety", "essential"],
+    "tags": [
+      "class",
+      "CPR",
+      "first aid",
+      "safety",
+      "essential"
+    ],
     "description": "Every parent and caregiver should know infant CPR before baby arrives. The Red Cross offers in-person and online options, typically a few hours long. You'll cover choking response, CPR for infants, and basic first aid. It's one of those skills you desperately hope never to use — and desperately want to have.",
     "link": "https://www.redcross.org/take-a-class/cpr/cpr-training/baby-cpr",
-    "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/33862096/pexels-photo-33862096.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "pregnancy"
   },
@@ -508,10 +739,16 @@
     "title": "Lamaze International — Childbirth Education Classes",
     "category": "resources",
     "subcategory": "Classes",
-    "tags": ["class", "childbirth", "labour", "birth preparation", "breathing"],
+    "tags": [
+      "class",
+      "childbirth",
+      "labour",
+      "birth preparation",
+      "breathing"
+    ],
     "description": "Lamaze classes go well beyond breathing techniques. Modern Lamaze education covers the stages of labour, pain management options (including epidurals), pushing techniques, newborn care basics, and advocacy in the birth setting. Use their class finder to locate a certified educator near you.",
     "link": "https://www.lamaze.org/find-a-class",
-    "imageUrl": "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/7991783/pexels-photo-7991783.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "pregnancy"
   },
@@ -520,10 +757,16 @@
     "title": "La Leche League — Breastfeeding Support",
     "category": "resources",
     "subcategory": "Classes",
-    "tags": ["class", "breastfeeding", "support group", "latch", "community"],
+    "tags": [
+      "class",
+      "breastfeeding",
+      "support group",
+      "latch",
+      "community"
+    ],
     "description": "La Leche League has been supporting breastfeeding families since 1956. Attend a local group meeting during pregnancy to build relationships before you need them, or connect online. Peer-to-peer support from experienced nursing parents — not just professionals — is often the most useful kind.",
     "link": "https://www.llli.org/get-help/",
-    "imageUrl": "https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/3074935/pexels-photo-3074935.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "mom",
     "stage": "pregnancy"
   },
@@ -532,10 +775,16 @@
     "title": "Happiest Baby SNOO Settle & Sleep Class",
     "category": "resources",
     "subcategory": "Classes",
-    "tags": ["class", "online", "newborn", "sleep", "soothing"],
+    "tags": [
+      "class",
+      "online",
+      "newborn",
+      "sleep",
+      "soothing"
+    ],
     "description": "A short, focused online class from the team behind the SNOO and Happiest Baby on the Block. Covers the 5 S's in depth, how to establish healthy sleep associations, and what to realistically expect in the first 12 weeks. Free to access — no SNOO required.",
     "link": "https://www.happiestbaby.com/blogs/baby/snoo-smart-sleeper-guide",
-    "imageUrl": "https://images.unsplash.com/photo-1596394723269-e657e1a4b2d2?w=400&q=80",
+    "imageUrl": "https://images.pexels.com/photos/14927259/pexels-photo-14927259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     "audience": "both",
     "stage": "newborn"
   }
