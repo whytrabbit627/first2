@@ -66,7 +66,7 @@ export default function Search() {
           onChange={e => setQuery(e.target.value)}
           placeholder="Search resources…"
           autoComplete="off"
-          className="w-full bg-surface-container rounded-xl pl-10 pr-10 py-3 text-on-background text-sm focus:outline-none focus:ring-2 focus:ring-secondary min-h-[44px]"
+          className="w-full bg-surface-container rounded-2xl pl-10 pr-10 py-3 text-on-background text-sm focus:outline-none focus:ring-2 focus:ring-secondary min-h-[44px]"
         />
         {hasQuery && (
           <button
